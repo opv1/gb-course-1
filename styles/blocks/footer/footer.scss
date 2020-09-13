@@ -3,6 +3,13 @@
   display: flex;
   width: 100%;
   background-color: #e6e6e6;
+  justify-content: center;
+}
+
+.footer-wrapper {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -19,6 +26,7 @@
 }
 
 .footer-icon {
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;

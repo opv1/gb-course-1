@@ -1,4 +1,19 @@
+.fetured {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.fetured-wrapper {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .fetured-caption {
+  margin: 0;
   font-family: 'Lato-Bold';
   font-size: 30px;
   line-height: 1.8;
@@ -11,16 +26,115 @@
   line-height: 3.86;
   letter-spacing: 0.35px;
   color: #9f9f9f;
+  height: auto;
+}
+
+.fetured-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.fetured-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 31px;
+  margin-bottom: 39px;
+  padding-bottom: 21px;
+
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+
+    .fetured-item__image {
+      img {
+        filter: brightness(30%);
+      }
+    }
+
+    .fetured-item__cart {
+      display: flex;
+    }
+  }
+}
+
+.fetured-item__image {
+  img {
+    display: block;
+  }
+}
+
+.fetured-item__cart {
+  position: absolute;
+  top: 94px;
+  left: 70px;
+  right: 70px;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #ffffff;
+  height: 39px;
+}
+
+.fetured-item__cart__image {
+  img {
+    display: block;
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.fetured-item__cart__title {
+  font-size: 13px;
+  font-family: 'Lato-Bold';
+  color: #ffffff;
+  margin-left: 8px;
 }
 
 .fetured-item__title {
   font-size: 13px;
   color: #222222;
   text-transform: uppercase;
+  margin-top: 19px;
+  margin-left: 15px;
 }
 
 .fetured-item__price {
   font-size: 16px;
   font-family: 'Lato-Bold';
   color: #f16d7f;
+  margin-top: 17px;
+  margin-left: 15px;
+}
+
+.fetured-link {
+  text-decoration: none;
+  background-color: #f16d7f;
+  display: flex;
+  align-items: center;
+  height: 48px;
+
+  span {
+    font-size: 16px;
+    line-height: 3.38;
+    letter-spacing: 0.4px;
+    font-family: 'Lato-Bold';
+    color: #ffffff;
+    margin-left: 24px;
+  }
+
+  i {
+    margin: 0 19px 0 9px;
+    color: #ffffff;
+  }
 }

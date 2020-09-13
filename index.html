@@ -14,41 +14,44 @@
     <div class="page">
       <header class="header">
         <div class="header-main">
-          <div class="header-block">
-            <div class="header-content">
-              <a class="header-logo" href="./index.html">
-                <div class="header-logo__image">
-                  <img src="./assets/images/logo.png" alt="Лого" />
+          <div class="header-wrapper">
+            <div class="header-block">
+              <div class="header-content">
+                <a class="header-logo" href="./index.html">
+                  <div class="header-logo__image">
+                    <img src="./assets/images/logo.png" alt="Лого" />
+                  </div>
+                  <span class="header-logo__title">bran</span>
+                  <span
+                    class="header-logo__title header-logo__title_last-letter"
+                    >d</span
+                  >
+                </a>
+                <div class="header-search">
+                  <div class="header-browse">
+                    <span>Browse</span>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <form class="header-form" action="">
+                    <input
+                      class="header-form__input"
+                      type="text"
+                      placeholder="Search for Item..."
+                    />
+                    <button class="header-form__button">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </form>
                 </div>
-                <span class="header-logo__title">bran</span>
-                <span class="header-logo__title header-logo__title_last-letter"
-                  >d</span
-                >
-              </a>
-              <div class="header-search">
-                <div class="header-browse">
-                  <span>Browse</span>
-                  <i class="fas fa-caret-down"></i>
-                </div>
-                <form class="header-form" action="">
-                  <input
-                    class="header-form__input"
-                    type="text"
-                    placeholder="Search for Item..."
-                  />
-                  <button class="header-form__button">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </form>
               </div>
+              <a class="header-cart" href="#">
+                <img src="./assets/images/cart.svg" alt="Корзина" />
+              </a>
             </div>
-            <a class="header-cart" href="#">
-              <img src="./assets/images/cart.svg" alt="Корзина" />
-            </a>
-          </div>
-          <div class="header-account">
-            <a class="header-account__link" href="#">My Account</a>
-            <i class="fas fa-caret-down"></i>
+            <div class="header-account">
+              <a class="header-account__link" href="#">My Account</a>
+              <i class="fas fa-caret-down"></i>
+            </div>
           </div>
         </div>
         <nav class="header-navigation">
@@ -79,173 +82,372 @@
       </header>
       <main class="main">
         <section class="deal">
-          <div class="deal-block">
-            <h1 class="deal-block__title">THE BRAND</h1>
-            <span class="deal-block__subtitle">OF LUXERIOUS FASHION</span>
+          <div class="deal-wrapper">
+            <div class="deal-block">
+              <h1 class="deal-block__title">the brand</h1>
+              <span class="deal-block__subtitle"
+                >of luxerious
+                <span
+                  class="deal-block__subtitle deal-block__subtitle_last-word"
+                  >fashion</span
+                >
+              </span>
+            </div>
           </div>
         </section>
         <section class="catalog">
-          <div class="catalog-item">
-            <span class="catalog-item__title">hot deal</span>
-            <span class="catalog-item__type">for men</span>
-          </div>
-          <div class="catalog-item">
-            <span class="catalog-item__title">30% offer</span>
-            <span class="catalog-item__type">women</span>
-          </div>
-          <div class="catalog-item">
-            <span class="catalog-item__title">luxirous & trendy</span>
-            <span class="catalog-item__type">accesories</span>
-          </div>
-          <div class="catalog-item">
-            <span class="catalog-item__title">new arrivals</span>
-            <span class="catalog-item__type">for kids</span>
+          <div class="catalog-wrapper">
+            <div class="catalog-item">
+              <img src="./assets/images/catalog-1.png" alt="Изображение" />
+              <div class="catalog-item__block">
+                <span class="catalog-item__title">hot deal</span>
+                <span class="catalog-item__type">for men</span>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <img src="./assets/images/catalog-2.png" alt="Изображение" />
+              <div class="catalog-item__block">
+                <span class="catalog-item__title">30% offer</span>
+                <span class="catalog-item__type">women</span>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <img src="./assets/images/catalog-3.png" alt="Изображение" />
+              <div class="catalog-item__block">
+                <span class="catalog-item__title">luxirous & trendy</span>
+                <span class="catalog-item__type">accesories</span>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <img src="./assets/images/catalog-4.png" alt="Изображение" />
+              <div class="catalog-item__block">
+                <span class="catalog-item__title">new arrivals</span>
+                <span class="catalog-item__type">for kids</span>
+              </div>
+            </div>
           </div>
         </section>
         <section class="fetured">
-          <h2 class="fetured-caption">Fetured Items</h2>
-          <span class="fetured-subcaption"
-            >Shop for items based on what we featured in this week</span
-          >
-          <div class="fetured-container">
-            <div class="fetured-item">
-              <div class="fetured-item__image">
-                <img src="" alt="Изображение" />
+          <div class="fetured-wrapper">
+            <h2 class="fetured-caption">Fetured Items</h2>
+            <span class="fetured-subcaption">
+              Shop for items based on what we featured in this week
+            </span>
+            <div class="fetured-container">
+              <div class="fetured-item">
+                <div class="fetured-item__image">
+                  <img src="./assets/images/fetured-1.png" alt="Изображение" />
+                </div>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
               </div>
-              <span class="fetured-item__title">Mango People T-shirt</span>
-              <span class="fetured-item__price">$52.00</span>
+              <div class="fetured-item">
+                <div class="fetured-item__image">
+                  <img src="./assets/images/fetured-2.png" alt="Изображение" />
+                </div>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+              <div class="fetured-item">
+                <div class="fetured-item__image">
+                  <img src="./assets/images/fetured-3.png" alt="Изображение" />
+                </div>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+              <div class="fetured-item">
+                <div class="fetured-item__image">
+                  <img src="./assets/images/fetured-4.png" alt="Изображение" />
+                </div>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+              <div class="fetured-item">
+                <div class="fetured-item__image">
+                  <img src="./assets/images/fetured-5.png" alt="Изображение" />
+                </div>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+              <div class="fetured-item">
+                <div class="fetured-item__image">
+                  <img src="./assets/images/fetured-6.png" alt="Изображение" />
+                </div>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+              <div class="fetured-item">
+                <div class="fetured-item__image">
+                  <img src="./assets/images/fetured-7.png" alt="Изображение" />
+                </div>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+              <div class="fetured-item">
+                <div class="fetured-item__image">
+                  <img src="./assets/images/fetured-8.png" alt="Изображение" />
+                </div>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
             </div>
-            <div class="fetured-item">
-              <div class="fetured-item__image">
-                <img src="" alt="Изображение" />
-              </div>
-              <span class="fetured-item__title">Mango People T-shirt</span>
-              <span class="fetured-item__price">$52.00</span>
-            </div>
-            <div class="fetured-item">
-              <div class="fetured-item__image">
-                <img src="" alt="Изображение" />
-              </div>
-              <span class="fetured-item__title">Mango People T-shirt</span>
-              <span class="fetured-item__price">$52.00</span>
-            </div>
-            <div class="fetured-item">
-              <div class="fetured-item__image">
-                <img src="" alt="Изображение" />
-              </div>
-              <span class="fetured-item__title">Mango People T-shirt</span>
-              <span class="fetured-item__price">$52.00</span>
-            </div>
-            <div class="fetured-item">
-              <div class="fetured-item__image">
-                <img src="" alt="Изображение" />
-              </div>
-              <span class="fetured-item__title">Mango People T-shirt</span>
-              <span class="fetured-item__price">$52.00</span>
-            </div>
-            <div class="fetured-item">
-              <div class="fetured-item__image">
-                <img src="" alt="Изображение" />
-              </div>
-              <span class="fetured-item__title">Mango People T-shirt</span>
-              <span class="fetured-item__price">$52.00</span>
-            </div>
-            <div class="fetured-item">
-              <div class="fetured-item__image">
-                <img src="" alt="Изображение" />
-              </div>
-              <span class="fetured-item__title">Mango People T-shirt</span>
-              <span class="fetured-item__price">$52.00</span>
-            </div>
-            <div class="fetured-item">
-              <div class="fetured-item__image">
-                <img src="" alt="Изображение" />
-              </div>
-              <span class="fetured-item__title">Mango People T-shirt</span>
-              <span class="fetured-item__price">$52.00</span>
-            </div>
-          </div>
-          <a href="#">
-            <span>Browse All Product</span>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </a>
-        </section>
-        <section class="offer"></section>
-        <section class="subscribe"></section>
-        <section class="info">
-          <div class="info-left">
-            <a class="info-logo" href="./index.html">
-              <div class="info-logo__image">
-                <img src="./assets/images/logo.png" alt="Лого" />
-              </div>
-              <span class="info-logo__title">bran</span>
-              <span class="info-logo__title info-logo__title_last-letter"
-                >d</span
-              >
+            <a class="fetured-link" href="#">
+              <span>Browse All Product</span>
+              <i class="fas fa-long-arrow-alt-right"></i>
             </a>
-            <p class="info-text">
-              Objectively transition extensive data rather than cross functional
-              solutions. Monotonectally syndicate multidisciplinary materials
-              before go forward benefits. Intrinsicly syndicate an expanded
-              array of processes and cross-unit partnerships.
-            </p>
-            <p class="info-text">
-              Efficiently plagiarize 24/365 action items and focused
-              infomediaries. Distinctively seize superior initiatives for
-              wireless technologies. Dynamically optimize.
-            </p>
           </div>
-          <div class="info-right">
-            <div class="info-column">
-              <span class="info-column__title">company</span>
-              <ul class="info-column__list">
-                <li class="info-column__item">Home</li>
-                <li class="info-column__item">Shop</li>
-                <li class="info-column__item">About</li>
-                <li class="info-column__item">How It Works</li>
-                <li class="info-column__item">Contact</li>
-              </ul>
+        </section>
+        <section class="offer">
+          <div class="offer-wrapper">
+            <div class="offer-left">
+              <div class="offer-caption">
+                <span class="offer-caption__title"
+                  >30%
+                  <span class="offer-caption__title offer-caption__title_mod"
+                    >offer</span
+                  ></span
+                >
+                <span class="offer-caption__subtitle">for women</span>
+              </div>
             </div>
-            <div class="info-column">
-              <span class="info-column__title">information</span>
-              <ul class="info-column__list">
-                <li class="info-column__item">Tearms & Condition</li>
-                <li class="info-column__item">Privacy Policy</li>
-                <li class="info-column__item">How to Buy</li>
-                <li class="info-column__item">How to Sell</li>
-                <li class="info-column__item">Promotion</li>
-              </ul>
+            <div class="offer-right">
+              <div class="offer-item">
+                <div class="offer-item__image">
+                  <img src="./assets/images/offer-3.png" alt="Иконка" />
+                </div>
+                <div class="offer-item__plus">
+                  <h5 class="offer-item__plus__title">Free Delivery</h5>
+                  <p class="offer-item__plus__text">
+                    Worldwide delivery on all. Authorit tively morph
+                    next-generation innov tion with extensive models.
+                  </p>
+                </div>
+              </div>
+              <div class="offer-item">
+                <div class="offer-item__image">
+                  <img src="./assets/images/offer-2.png" alt="Иконка" />
+                </div>
+                <div class="offer-item__plus">
+                  <h5 class="offer-item__plus__title">Sales & discounts</h5>
+                  <p class="offer-item__plus__text">
+                    Worldwide delivery on all. Authorit tively morph
+                    next-generation innov tion with extensive models.
+                  </p>
+                </div>
+              </div>
+              <div class="offer-item">
+                <div class="offer-item__image">
+                  <img src="./assets/images/offer-1.png" alt="Иконка" />
+                </div>
+                <div class="offer-item__plus">
+                  <h5 class="offer-item__plus__title">Quality assurance</h5>
+                  <p class="offer-item__plus__text">
+                    Worldwide delivery on all. Authorit tively morph
+                    next-generation innov tion with extensive models.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="info-column">
-              <span class="info-column__title">shop category</span>
-              <ul class="info-column__list">
-                <li class="info-column__item">Men</li>
-                <li class="info-column__item">Women</li>
-                <li class="info-column__item">Child</li>
-                <li class="info-column__item">Apparel</li>
-                <li class="info-column__item">Brows All</li>
-              </ul>
+          </div>
+        </section>
+        <section class="subscribe">
+          <div class="subscribe-wrapper">
+            <div class="subscribe-left">
+              <div class="subscribe-avatar">
+                <img src="./assets/images/avatar.png" alt="Аватар" />
+              </div>
+              <div class="subscribe-review">
+                <blockquote class="subscribe-review__quote">
+                  “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                  pulvinar purus condimentum a. Aliquam condimentum mattis neque
+                  sed pretium”
+                </blockquote>
+                <span class="subscribe-review__author">Bin Burhan</span>
+                <span class="subscribe-review__about">Dhaka, Bd</span>
+                <div class="subscribe-review__pagination">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="subscribe-right">
+              <div class="subscribe-block">
+                <h4 class="subscribe-block__caption">subscribe</h4>
+                <span class="subscribe-block__subcaption">
+                  for our newletter and promotion</span
+                >
+              </div>
+              <form class="subscribe-form" action="">
+                <input
+                  class="subscribe-form__input"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter Your Email"
+                />
+                <button class="subscribe-form__button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="info">
+          <div class="info-wrapper">
+            <div class="info-left">
+              <a class="info-logo" href="./index.html">
+                <div class="info-logo__image">
+                  <img src="./assets/images/logo.png" alt="Лого" />
+                </div>
+                <span class="info-logo__title">bran</span>
+                <span class="info-logo__title info-logo__title_last-letter"
+                  >d</span
+                >
+              </a>
+              <p class="info-text">
+                Objectively transition extensive data rather than cross
+                functional solutions. Monotonectally syndicate multidisciplinary
+                materials before go forward benefits. Intrinsicly syndicate an
+                expanded array of processes and cross-unit partnerships.
+              </p>
+              <p class="info-text">
+                Efficiently plagiarize 24/365 action items and focused
+                infomediaries. Distinctively seize superior initiatives for
+                wireless technologies. Dynamically optimize.
+              </p>
+            </div>
+            <div class="info-right">
+              <div class="info-column">
+                <span class="info-column__title">company</span>
+                <ul class="info-column__list">
+                  <li class="info-column__item">
+                    <a href="#">Home</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Shop</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">About</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">How It Works</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="info-column">
+                <span class="info-column__title">information</span>
+                <ul class="info-column__list">
+                  <li class="info-column__item">
+                    <a href="#">Tearms & Condition</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">How to Buy</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">How to Sell</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Promotion</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="info-column">
+                <span class="info-column__title">shop category</span>
+                <ul class="info-column__list">
+                  <li class="info-column__item">
+                    <a href="#">Men</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Women</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Child</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Apparel</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Brows All</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
       </main>
       <footer class="footer">
-        <span class="footer-copy">&copy; 2017 Brand All Rights Reserved.</span>
-        <div class="footer-icons">
-          <div class="footer-icon">
-            <i class="fab fa-facebook-f"></i>
-          </div>
-          <div class="footer-icon">
-            <i class="fab fa-twitter"></i>
-          </div>
-          <div class="footer-icon">
-            <i class="fab fa-linkedin-in"></i>
-          </div>
-          <div class="footer-icon">
-            <i class="fab fa-pinterest-p"></i>
-          </div>
-          <div class="footer-icon">
-            <i class="fab fa-google-plus-g"></i>
+        <div class="footer-wrapper">
+          <span class="footer-copy"
+            >&copy; 2017 Brand All Rights Reserved.</span
+          >
+          <div class="footer-icons">
+            <a class="footer-icon" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="footer-icon" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="footer-icon" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="footer-icon" href="#">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a class="footer-icon" href="#">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
           </div>
         </div>
       </footer>
