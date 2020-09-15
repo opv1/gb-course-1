@@ -1,0 +1,29 @@
+@import './fonts';
+@import './blocks/header';
+@import './blocks/index/catalog', './blocks/index/deal',
+  './blocks/index/fetured', './blocks/index/info', './blocks/index/offer',
+  './blocks/index/subscribe';
+@import './blocks/footer';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato-Regular', Arial, Helvetica, sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "gb-course-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opv1/gb-course-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opv1/gb-course-1/issues"
+  },
+  "homepage": "https://github.com/opv1/gb-course-1#readme"
+}

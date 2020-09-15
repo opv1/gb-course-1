@@ -1,0 +1,12 @@
+$blackColor: #222224;
+$whiteColor: #ffffff;
+$pinkColor: #f16d7f;
+$greyColor: #e6e6e6;
+
+@function hoverColor($color) {
+  @return darken($color, 5%);
+}
+
+@function activeColor($color) {
+  @return darken($color, 10%);
+}
