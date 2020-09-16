@@ -1,8 +1,7 @@
 @import './fonts';
 @import './blocks/header';
-@import './blocks/index/catalog', './blocks/index/deal',
-  './blocks/index/fetured', './blocks/index/info', './blocks/index/offer',
-  './blocks/index/subscribe';
+@import './blocks/catalog', './blocks/deal', './blocks/fetured', './blocks/info',
+  './blocks/offer', './blocks/subscribe';
 @import './blocks/footer';
 
 * {
