@@ -64,66 +64,69 @@
         }
       }
     }
-  }
 
-  &-item__image {
-    img {
-      display: block;
-      object-fit: cover;
-      object-position: center;
+    &__image {
+      img {
+        display: block;
+        object-fit: cover;
+        object-position: center;
+      }
     }
-  }
 
-  &-item__cart {
-    position: absolute;
-    left: 70px;
-    top: 94px;
-    right: 70px;
-    z-index: 100;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    height: 39px;
-    border: solid 1px $whiteColor;
-  }
+    &__cart {
+      position: absolute;
+      left: 70px;
+      top: 94px;
+      right: 70px;
+      z-index: 100;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      height: 39px;
+      border: solid 1px $whiteColor;
 
-  &-item__cart__image {
-    img {
-      display: block;
-      width: 23px;
-      height: 23px;
+      &__image {
+        img {
+          display: block;
+          width: 23px;
+          height: 23px;
+        }
+      }
+
+      &__title {
+        margin-left: 8px;
+        font-family: 'Lato-Bold';
+        font-size: 13px;
+        color: $whiteColor;
+      }
     }
-  }
 
-  &-item__cart__title {
-    margin-left: 8px;
-    font-family: 'Lato-Bold';
-    font-size: 13px;
-    color: $whiteColor;
-  }
+    &__title {
+      margin-top: 19px;
+      margin-left: 15px;
+      text-transform: uppercase;
+      font-family: 'Lato-Bold';
+      font-size: 13px;
+      color: $blackColor;
+    }
 
-  &-item__title {
-    margin-top: 19px;
-    margin-left: 15px;
-    text-transform: uppercase;
-    font-family: 'Lato-Bold';
-    font-size: 13px;
-    color: $blackColor;
-  }
-
-  &-item__price {
-    margin-top: 17px;
-    margin-left: 15px;
-    font-family: 'Lato-Bold';
-    font-size: 16px;
-    color: $pinkColor;
+    &__price {
+      margin-top: 17px;
+      margin-left: 15px;
+      font-family: 'Lato-Bold';
+      font-size: 16px;
+      color: $pinkColor;
+    }
   }
 
   &-link {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 48px;
+    padding-left: 24px;
+    padding-right: 19px;
     text-decoration: none;
     background-color: $pinkColor;
 
@@ -132,16 +135,14 @@
     }
 
     span {
-      margin-left: 24px;
       font-family: 'Lato-Bold';
       font-size: 16px;
-      line-height: 3.38;
       letter-spacing: 0.4px;
       color: $whiteColor;
     }
 
     i {
-      margin: 0 19px 0 9px;
+      margin-left: 9px;
       color: $whiteColor;
     }
   }

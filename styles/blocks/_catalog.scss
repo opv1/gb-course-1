@@ -44,34 +44,34 @@
       object-fit: cover;
       object-position: center;
     }
-  }
 
-  &-item__block {
-    position: absolute;
-    left: 0;
-    top: 27px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 82px;
-    padding: 0 20px;
-    background-color: $whiteColor;
-  }
+    &__block {
+      position: absolute;
+      left: 0;
+      top: 27px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 82px;
+      padding: 0 20px;
+      background-color: $whiteColor;
+    }
 
-  &-item__title {
-    text-transform: uppercase;
-    font-family: 'Lato-Black';
-    font-size: 18px;
-    letter-spacing: 0.45px;
-    color: $blackColor;
-  }
+    &__title {
+      text-transform: uppercase;
+      font-family: 'Lato-Black';
+      font-size: 18px;
+      letter-spacing: 0.45px;
+      color: $blackColor;
+    }
 
-  &-item__type {
-    margin-top: 5px;
-    text-transform: uppercase;
-    font-family: 'Lato-Black';
-    font-size: 30px;
-    letter-spacing: 0.75px;
-    color: $pinkColor;
+    &__type {
+      margin-top: 5px;
+      text-transform: uppercase;
+      font-family: 'Lato-Black';
+      font-size: 30px;
+      letter-spacing: 0.75px;
+      color: $pinkColor;
+    }
   }
 }

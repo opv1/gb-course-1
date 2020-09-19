@@ -15,7 +15,7 @@
       <header class="header">
         <div class="header-main">
           <div class="header-wrapper">
-            <div class="header-block">
+            <div class="header-container">
               <div class="header-content">
                 <a class="header-logo" href="./index.html">
                   <div class="header-logo__image">
@@ -28,18 +28,17 @@
                   >
                 </a>
                 <div class="header-search">
-                  <div class="header-browse">
+                  <div class="header-search__browse">
                     <span>Browse</span>
                     <i class="fas fa-caret-down"></i>
                   </div>
-                  <form class="header-form" action="">
+                  <form class="header-search__form" action="">
                     <input
-                      class="header-form__input"
                       type="text"
                       placeholder="Search for Item..."
                       required
                     />
-                    <button class="header-form__button">
+                    <button>
                       <i class="fas fa-search"></i>
                     </button>
                   </form>
@@ -300,43 +299,44 @@
           </div>
         </section>
         <section class="subscribe">
-          <div class="subscribe-wrapper">
-            <div class="subscribe-left">
-              <div class="subscribe-avatar">
-                <img src="./assets/images/avatar.png" alt="Аватар" />
-              </div>
-              <div class="subscribe-review">
-                <blockquote class="subscribe-review__quote">
-                  “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-                  pulvinar purus condimentum a. Aliquam condimentum mattis neque
-                  sed pretium”
-                </blockquote>
-                <span class="subscribe-review__author">Bin Burhan</span>
-                <span class="subscribe-review__about">Dhaka, Bd</span>
-                <div class="subscribe-review__pagination">
-                  <span></span>
-                  <span></span>
+          <div class="subscribe-background">
+            <div class="subscribe-wrapper">
+              <div class="subscribe-left">
+                <div class="subscribe-avatar">
+                  <img src="./assets/images/avatar.png" alt="Аватар" />
+                </div>
+                <div class="subscribe-review">
+                  <blockquote class="subscribe-review__quote">
+                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                    pulvinar purus condimentum a. Aliquam condimentum mattis
+                    neque sed pretium”
+                  </blockquote>
+                  <span class="subscribe-review__author">Bin Burhan</span>
+                  <span class="subscribe-review__about">Dhaka, Bd</span>
+                  <div class="subscribe-review__pagination">
+                    <span></span>
+                    <span></span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="subscribe-right">
-              <div class="subscribe-block">
-                <h4 class="subscribe-block__caption">subscribe</h4>
-                <span class="subscribe-block__subcaption">
-                  for our newletter and promotion</span
-                >
+              <div class="subscribe-right">
+                <div class="subscribe-block">
+                  <h4 class="subscribe-block__caption">subscribe</h4>
+                  <span class="subscribe-block__subcaption">
+                    for our newletter and promotion</span
+                  >
+                </div>
+                <form class="subscribe-form" action="">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Enter Your Email"
+                    required
+                  />
+                  <button>Subscribe</button>
+                </form>
               </div>
-              <form class="subscribe-form" action="">
-                <input
-                  class="subscribe-form__input"
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Enter Your Email"
-                  required
-                />
-                <button class="subscribe-form__button">Subscribe</button>
-              </form>
             </div>
           </div>
         </section>
