@@ -8,8 +8,8 @@
 
   &-wrapper {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     max-width: 1140px;
   }
@@ -21,31 +21,33 @@
     color: $pinkColor;
   }
 
-  .banner-navigation__list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+  &-navigation {
+    &__list {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
 
-  .banner-navigation__item {
-    a {
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: 'Lato-Light';
-      font-size: 14px;
-      color: #636363;
+    &__item {
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Lato-Light';
+        font-size: 14px;
+        color: #636363;
 
-      &:hover {
-        color: $pinkColor;
+        &:hover {
+          color: $pinkColor;
+        }
       }
     }
-  }
 
-  .banner-navigation__item_active {
-    a {
-      font-family: 'Lato-Bold';
-      color: $pinkColor;
+    &__item_active {
+      a {
+        font-family: 'Lato-Bold';
+        color: $pinkColor;
+      }
     }
   }
 }

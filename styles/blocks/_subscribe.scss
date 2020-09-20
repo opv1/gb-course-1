@@ -11,7 +11,8 @@
     display: flex;
     justify-content: center;
     width: 1600px;
-    background: url(../assets/images/subscribe-1.png) #aaaaaa no-repeat center;
+    background: #aaaaaa url(../assets/images/subscribe-1.png) center no-repeat;
+    background-size: cover;
     background-blend-mode: overlay;
   }
 
