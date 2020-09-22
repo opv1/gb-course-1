@@ -1,0 +1,29 @@
+@import './fonts';
+@import './blocks/header';
+@import './blocks/banner', './blocks/carousel', './blocks/info',
+  './blocks/specification', './blocks/subscribe';
+@import './blocks/footer';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato-Regular', Arial, Helvetica, sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 320px;
+  margin: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
