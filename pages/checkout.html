@@ -34,7 +34,7 @@
                     action=""
                   >
                     <input
-                      type="text"
+                      type="search"
                       placeholder="Search for item..."
                       required
                     />
@@ -144,11 +144,21 @@
                     action=""
                   >
                     <div>
-                      <input id="guest" type="radio" />
+                      <input
+                        id="guest"
+                        type="radio"
+                        name="value"
+                        value="guest"
+                      />
                       <label for="guest">checkout as guest</label>
                     </div>
                     <div>
-                      <input id="register" type="radio" />
+                      <input
+                        id="register"
+                        type="radio"
+                        name="value"
+                        value="register"
+                      />
                       <label for="register">register</label>
                     </div>
                   </form>
