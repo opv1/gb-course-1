@@ -24,21 +24,24 @@
                   >
                 </a>
                 <div class="header-search">
-                  <div class="header-search__browse">
-                    <span>Browse</span>
-                    <i class="fas fa-caret-down"></i>
-                  </div>
                   <form
                     class="header-search__form"
                     name="header-form"
                     action=""
                   >
+                    <select name="header-form-select" form="header-form">
+                      <option value="disabled" selected>Browse</option>
+                      <option value="Category1">Category1</option>
+                      <option value="Category2">Category2</option>
+                    </select>
                     <input
+                      name="header-form-input"
+                      form="header-form"
                       type="search"
                       placeholder="Search for item..."
                       required
                     />
-                    <button>
+                    <button name="header-form-button" form="header-form">
                       <i class="fas fa-search"></i>
                     </button>
                   </form>
@@ -201,11 +204,15 @@
                 <div class="goods-display">
                   <div>
                     <span>Sort By</span>
-                    <select name="" id=""></select>
+                    <select name="" id="">
+                      <option value="Name">Name</option>
+                    </select>
                   </div>
                   <div>
                     <span>Show</span>
-                    <select name="" id=""></select>
+                    <select name="" id="">
+                      <option value="9">09</option>
+                    </select>
                   </div>
                 </div>
               </div>
@@ -284,8 +291,16 @@
                   >
                 </div>
                 <form class="subscribe-form" name="subscribe-form" action="">
-                  <input type="text" placeholder="Enter Your Email" required />
-                  <button>Subscribe</button>
+                  <input
+                    name="subscribe-form-input"
+                    form="subscribe-form"
+                    type="text"
+                    placeholder="Enter Your Email"
+                    required
+                  />
+                  <button name="subscribe-form-button" form="subscribe-form">
+                    Subscribe
+                  </button>
                 </form>
               </div>
             </div>

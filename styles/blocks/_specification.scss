@@ -131,15 +131,19 @@
         }
 
         select {
+          cursor: pointer;
           width: 144px;
           height: 35px;
           padding-left: 14px;
           outline: none;
           border: solid 1px #eaeaea;
           background-color: $whiteColor;
+          font-size: 14px;
+          color: $blackColor;
 
           option {
             font-size: 14px;
+            color: $blackColor;
 
             &:first-child {
               color: #bcbcbc;
@@ -198,10 +202,6 @@
       svg {
         display: block;
         margin-right: 15px;
-      }
-
-      svg path {
-        fill: $pinkColor;
       }
     }
   }

@@ -79,37 +79,34 @@
     border: 1px solid #e6e6e6;
     border-radius: 3px;
 
-    &__browse {
+    &__form {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 87px;
       height: 100%;
-      cursor: pointer;
-      background-color: #f9f9f9;
 
-      &:hover {
-        background-color: hoverColor(#f9f9f9);
-      }
-
-      span {
+      select {
+        width: 87px;
+        height: 100%;
+        padding-left: 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: #f9f9f9;
         font-family: 'Lato-Light';
         font-size: 14px;
         letter-spacing: 0.35px;
         color: $blackColor;
-      }
 
-      i {
-        display: flex;
-        align-items: center;
-        margin-left: 8px;
-        color: #838383;
-      }
-    }
+        &:hover {
+          background-color: hoverColor(#f9f9f9);
+        }
 
-    &__form {
-      display: flex;
-      height: 100%;
+        option {
+          font-family: 'Lato-Light';
+          font-size: 14px;
+          letter-spacing: 0.35px;
+          color: $blackColor;
+        }
+      }
 
       input {
         width: 280px;
