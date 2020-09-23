@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/545676c48a.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="../styles/single.css" />
     <title>Single</title>
   </head>
@@ -32,10 +28,14 @@
                     <span>Browse</span>
                     <i class="fas fa-caret-down"></i>
                   </div>
-                  <form class="header-search__form" action="">
+                  <form
+                    class="header-search__form"
+                    name="header-form"
+                    action=""
+                  >
                     <input
                       type="text"
-                      placeholder="Search for Item..."
+                      placeholder="Search for item..."
                       required
                     />
                     <button>
@@ -83,7 +83,7 @@
       <main class="main">
         <section class="banner">
           <div class="banner-wrapper">
-            <span class="banner-caption">new arrivals</span>
+            <h1 class="banner-caption">new arrivals</h1>
             <div class="banner-block">
               <nav class="banner-navigation">
                 <ul class="banner-navigation__list">
@@ -117,9 +117,7 @@
           <div class="specification-wrapper">
             <div class="specification-container">
               <div class="specification-details">
-                <span class="specification-details__caption"
-                  >women colection</span
-                >
+                <h2 class="specification-details__caption">women colection</h2>
                 <span class="specification-details__title"
                   >moschino cheap and chic</span
                 >
@@ -138,31 +136,47 @@
                   <span>$561</span>
                 </div>
               </div>
-              <form class="specification-form" action="">
+              <form
+                class="specification-form"
+                name="specification-form"
+                action=""
+              >
                 <div>
                   <div>
                     <span>choose color</span>
-                    <select name="" id="">
+                    <select name="" id="" required>
+                      <option value="disabled" selected disabled>
+                        Color...
+                      </option>
+                      <option value="Black">Black</option>
                       <option value="Red">Red</option>
                     </select>
                   </div>
                   <div>
                     <span>choose size</span>
-                    <select name="" id="">
-                      <option value="XXL">XXL</option>
+                    <select name="" id="" required>
+                      <option value="disabled" selected disabled>
+                        Size...
+                      </option>
                       <option value="XL">XL</option>
+                      <option value="XXL">XXL</option>
                     </select>
                   </div>
                   <div>
                     <span>quanity</span>
-                    <input type="text" value="2" />
+                    <input
+                      type="number"
+                      value="2"
+                      placeholder="Quanity..."
+                      required
+                    />
                   </div>
                 </div>
                 <button>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="29"
+                    width="26"
+                    height="24"
                     viewBox="0 0 32 29"
                   >
                     <defs>
@@ -186,12 +200,12 @@
               </form>
             </div>
             <div class="specification-also">
-              <h4 class="specification-also__caption">you may like also</h4>
+              <h3 class="specification-also__caption">you may like also</h3>
               <div class="specification-also__block">
                 <div class="specification-also__block__item">
-                  <div>
+                  <figure>
                     <img src="../assets/images/spec-1.png" alt="Изображение" />
-                  </div>
+                  </figure>
                   <span class="specification-also__block__item__title"
                     >blaze leggins</span
                   >
@@ -200,9 +214,9 @@
                   >
                 </div>
                 <div class="specification-also__block__item">
-                  <div>
+                  <figure>
                     <img src="../assets/images/spec-2.png" alt="Изображение" />
-                  </div>
+                  </figure>
                   <span class="specification-also__block__item__title"
                     >alexa sweater</span
                   >
@@ -211,9 +225,9 @@
                   >
                 </div>
                 <div class="specification-also__block__item">
-                  <div>
+                  <figure>
                     <img src="../assets/images/spec-3.png" alt="Изображение" />
-                  </div>
+                  </figure>
                   <span class="specification-also__block__item__title"
                     >agnes top</span
                   >
@@ -222,9 +236,9 @@
                   >
                 </div>
                 <div class="specification-also__block__item">
-                  <div>
+                  <figure>
                     <img src="../assets/images/spec-4.png" alt="Изображение" />
-                  </div>
+                  </figure>
                   <span class="specification-also__block__item__title"
                     >sylva sweater</span
                   >
@@ -240,14 +254,16 @@
           <div class="subscribe-background">
             <div class="subscribe-wrapper">
               <div class="subscribe-left">
-                <div class="subscribe-avatar">
+                <figure class="subscribe-avatar">
                   <img src="../assets/images/avatar.png" alt="Аватар" />
-                </div>
+                </figure>
                 <div class="subscribe-review">
                   <blockquote class="subscribe-review__quote">
-                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-                    pulvinar purus condimentum a. Aliquam condimentum mattis
-                    neque sed pretium”
+                    <p>
+                      “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                      pulvinar purus condimentum a. Aliquam condimentum mattis
+                      neque sed pretium”
+                    </p>
                   </blockquote>
                   <span class="subscribe-review__author">Bin Burhan</span>
                   <span class="subscribe-review__about">Dhaka, Bd</span>
@@ -259,12 +275,12 @@
               </div>
               <div class="subscribe-right">
                 <div class="subscribe-block">
-                  <h4 class="subscribe-block__caption">subscribe</h4>
+                  <h5 class="subscribe-block__caption">subscribe</h5>
                   <span class="subscribe-block__subcaption">
                     for our newletter and promotion</span
                   >
                 </div>
-                <form class="subscribe-form" action="">
+                <form class="subscribe-form" name="subscribe-form" action="">
                   <input type="text" placeholder="Enter Your Email" required />
                   <button>Subscribe</button>
                 </form>
@@ -276,9 +292,9 @@
           <div class="info-wrapper">
             <div class="info-left">
               <a class="info-logo" href="../index.html">
-                <div class="info-logo__image">
+                <figure class="info-logo__image">
                   <img src="../assets/images/logo.png" alt="Лого" />
-                </div>
+                </figure>
                 <span class="info-logo__title">bran</span>
                 <span class="info-logo__title info-logo__title_last-letter"
                   >d</span
@@ -298,7 +314,7 @@
             </div>
             <div class="info-right">
               <div class="info-column">
-                <span class="info-column__title">company</span>
+                <h6 class="info-column__title">company</h6>
                 <ul class="info-column__list">
                   <li class="info-column__item">
                     <a href="#">Home</a>
@@ -318,7 +334,7 @@
                 </ul>
               </div>
               <div class="info-column">
-                <span class="info-column__title">information</span>
+                <h6 class="info-column__title">information</h6>
                 <ul class="info-column__list">
                   <li class="info-column__item">
                     <a href="#">Tearms & Condition</a>
@@ -338,7 +354,7 @@
                 </ul>
               </div>
               <div class="info-column">
-                <span class="info-column__title">shop category</span>
+                <h6 class="info-column__title">shop category</h6>
                 <ul class="info-column__list">
                   <li class="info-column__item">
                     <a href="#">Men</a>
@@ -411,5 +427,9 @@
         </div>
       </footer>
     </div>
+    <script
+      src="https://kit.fontawesome.com/545676c48a.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

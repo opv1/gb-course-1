@@ -31,6 +31,8 @@
   }
 
   &-avatar {
+    margin: 0;
+
     img {
       display: block;
       object-fit: cover;
@@ -47,11 +49,15 @@
       width: 416px;
       margin: 0;
       margin-bottom: 19px;
-      font-size: 16px;
-      font-style: italic;
-      line-height: 1.63;
-      letter-spacing: 0.4px;
-      color: $blackColor;
+
+      p {
+        margin: 0;
+        font-size: 16px;
+        font-style: italic;
+        line-height: 1.63;
+        letter-spacing: 0.4px;
+        color: $blackColor;
+      }
     }
 
     &__author {

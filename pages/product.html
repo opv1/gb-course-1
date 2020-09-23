@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/545676c48a.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="../styles/product.css" />
     <title>Product</title>
   </head>
@@ -32,10 +28,14 @@
                     <span>Browse</span>
                     <i class="fas fa-caret-down"></i>
                   </div>
-                  <form class="header-search__form" action="">
+                  <form
+                    class="header-search__form"
+                    name="header-form"
+                    action=""
+                  >
                     <input
                       type="text"
-                      placeholder="Search for Item..."
+                      placeholder="Search for item..."
                       required
                     />
                     <button>
@@ -127,71 +127,95 @@
           </div>
         </section>
         <section class="goods">
-          <div class="">
-            <details>
-              <summary>category</summary>
-              <div>
-                <span>Accessories </span>
-                <span>Bags</span>
-                <span>Denim</span>
-                <span>Hoodies & Sweatshirts</span>
-                <span>Jackets & Coats</span>
-                <span>Pants</span>
-                <span>Polos</span>
-                <span>Shirts</span>
-                <span>Shoes</span>
-                <span>Shorts</span>
-                <span>Sweaters & Knits</span>
-                <span>T-Shirts</span>
-                <span>Tanks</span>
-              </div>
-            </details>
-            <details>
-              <summary>brand</summary>
-            </details>
-            <details>
-              <summary>designer</summary>
-            </details>
-          </div>
-          <div class="">
-            <div>
-              <div>
-                <div>
-                  <span>trending now</span>
+          <div class="goods-wrapper">
+            <div class="goods-left">
+              <details class="goods-details" open>
+                <summary>
+                  <span>category</span>
+                </summary>
+                <div class="goods-details__block">
+                  <span>Accessories </span>
+                  <span>Bags</span>
+                  <span>Denim</span>
+                  <span>Hoodies & Sweatshirts</span>
+                  <span>Jackets & Coats</span>
+                  <span>Pants</span>
+                  <span>Polos</span>
+                  <span>Shirts</span>
+                  <span>Shoes</span>
+                  <span>Shorts</span>
+                  <span>Sweaters & Knits</span>
+                  <span>T-Shirts</span>
+                  <span>Tanks</span>
                 </div>
-                <div>
-                  <span>size</span>
-                  <form action="">
-                    <input type="text" />
-                    <input type="text" />
-                    <input type="text" />
-                    <input type="text" />
-                    <input type="text" />
-                    <input type="text" />
-                    <input type="text" />
-                  </form>
-                </div>
-                <div>
-                  <span>price</span>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <span>Sort By</span>
-                  <select name="" id=""></select>
-                </div>
-                <div>
-                  <span>Show</span>
-                  <select name="" id=""></select>
-                </div>
-              </div>
+              </details>
+              <details class="goods-details">
+                <summary>
+                  <span>brand</span>
+                </summary>
+              </details>
+              <details class="goods-details">
+                <summary>
+                  <span>designer</span>
+                </summary>
+              </details>
             </div>
-            <div>
-              <div></div>
-            </div>
-            <div>
-              <div></div>
-              <a href="">View All</a>
+            <div class="goods-right">
+              <div class="goods-config">
+                <div class="goods-sort">
+                  <div class="goods-sort__trending">
+                    <span>trending now</span>
+                  </div>
+                  <div class="goods-sort__size">
+                    <span>size</span>
+                    <form action="">
+                      <input type="checkbox" />
+                      <input type="checkbox" />
+                      <input type="checkbox" />
+                      <input type="checkbox" />
+                      <input type="checkbox" />
+                      <input type="checkbox" />
+                      <input type="checkbox" />
+                    </form>
+                  </div>
+                  <div class="goods-sort__price">
+                    <span>price</span>
+                    <div>
+                      <input
+                        id="input-left"
+                        type="range"
+                        min="0"
+                        max="1000"
+                        value="25"
+                      />
+                      <input
+                        id="input-right"
+                        type="range"
+                        min="0"
+                        max="1000"
+                        value="75"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="goods-display">
+                  <div>
+                    <span>Sort By</span>
+                    <select name="" id=""></select>
+                  </div>
+                  <div>
+                    <span>Show</span>
+                    <select name="" id=""></select>
+                  </div>
+                </div>
+              </div>
+              <div class="goods-items">
+                <div></div>
+              </div>
+              <div class="goods-pagination">
+                <div></div>
+                <a href="">View All</a>
+              </div>
             </div>
           </div>
         </section>
@@ -233,14 +257,16 @@
           <div class="subscribe-background">
             <div class="subscribe-wrapper">
               <div class="subscribe-left">
-                <div class="subscribe-avatar">
+                <figure class="subscribe-avatar">
                   <img src="../assets/images/avatar.png" alt="Аватар" />
-                </div>
+                </figure>
                 <div class="subscribe-review">
                   <blockquote class="subscribe-review__quote">
-                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-                    pulvinar purus condimentum a. Aliquam condimentum mattis
-                    neque sed pretium”
+                    <p>
+                      “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                      pulvinar purus condimentum a. Aliquam condimentum mattis
+                      neque sed pretium”
+                    </p>
                   </blockquote>
                   <span class="subscribe-review__author">Bin Burhan</span>
                   <span class="subscribe-review__about">Dhaka, Bd</span>
@@ -252,12 +278,12 @@
               </div>
               <div class="subscribe-right">
                 <div class="subscribe-block">
-                  <h4 class="subscribe-block__caption">subscribe</h4>
+                  <h5 class="subscribe-block__caption">subscribe</h5>
                   <span class="subscribe-block__subcaption">
                     for our newletter and promotion</span
                   >
                 </div>
-                <form class="subscribe-form" action="">
+                <form class="subscribe-form" name="subscribe-form" action="">
                   <input type="text" placeholder="Enter Your Email" required />
                   <button>Subscribe</button>
                 </form>
@@ -269,9 +295,9 @@
           <div class="info-wrapper">
             <div class="info-left">
               <a class="info-logo" href="../index.html">
-                <div class="info-logo__image">
+                <figure class="info-logo__image">
                   <img src="../assets/images/logo.png" alt="Лого" />
-                </div>
+                </figure>
                 <span class="info-logo__title">bran</span>
                 <span class="info-logo__title info-logo__title_last-letter"
                   >d</span
@@ -291,7 +317,7 @@
             </div>
             <div class="info-right">
               <div class="info-column">
-                <span class="info-column__title">company</span>
+                <h6 class="info-column__title">company</h6>
                 <ul class="info-column__list">
                   <li class="info-column__item">
                     <a href="#">Home</a>
@@ -311,7 +337,7 @@
                 </ul>
               </div>
               <div class="info-column">
-                <span class="info-column__title">information</span>
+                <h6 class="info-column__title">information</h6>
                 <ul class="info-column__list">
                   <li class="info-column__item">
                     <a href="#">Tearms & Condition</a>
@@ -331,7 +357,7 @@
                 </ul>
               </div>
               <div class="info-column">
-                <span class="info-column__title">shop category</span>
+                <h6 class="info-column__title">shop category</h6>
                 <ul class="info-column__list">
                   <li class="info-column__item">
                     <a href="#">Men</a>
@@ -404,5 +430,9 @@
         </div>
       </footer>
     </div>
+    <script
+      src="https://kit.fontawesome.com/545676c48a.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

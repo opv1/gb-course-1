@@ -25,6 +25,8 @@
     color: $blackColor;
 
     &__image {
+      margin: 0;
+
       img {
         display: block;
       }
@@ -76,6 +78,7 @@
     }
 
     &__title {
+      margin: 0;
       text-transform: uppercase;
       font-family: 'Lato-Bold';
       font-size: 18px;

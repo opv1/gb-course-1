@@ -1,12 +1,10 @@
+<!-- fieldset и label for input -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/545676c48a.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="./styles/index.css" />
     <title>Brand</title>
   </head>
@@ -18,9 +16,9 @@
             <div class="header-container">
               <div class="header-content">
                 <a class="header-logo" href="./index.html">
-                  <div class="header-logo__image">
+                  <figure class="header-logo__image">
                     <img src="./assets/images/logo.png" alt="Лого" />
-                  </div>
+                  </figure>
                   <span class="header-logo__title">bran</span>
                   <span
                     class="header-logo__title header-logo__title_last-letter"
@@ -32,10 +30,10 @@
                     <span>Browse</span>
                     <i class="fas fa-caret-down"></i>
                   </div>
-                  <form class="header-search__form" action="">
+                  <form class="header-search__form" name="header-form" action="">
                     <input
                       type="text"
-                      placeholder="Search for Item..."
+                      placeholder="Search for item..."
                       required
                     />
                     <button>
@@ -122,139 +120,222 @@
               <img src="./assets/images/catalog-1.png" alt="Изображение" />
               <div class="catalog-item__block">
                 <span class="catalog-item__title">hot deal</span>
-                <span class="catalog-item__type">for men</span>
+                <h2 class="catalog-item__type">for men</h2>
               </div>
             </div>
             <div class="catalog-item">
               <img src="./assets/images/catalog-2.png" alt="Изображение" />
               <div class="catalog-item__block">
                 <span class="catalog-item__title">30% offer</span>
-                <span class="catalog-item__type">women</span>
+                <h2 class="catalog-item__type">women</h2>
               </div>
             </div>
             <div class="catalog-item">
               <img src="./assets/images/catalog-3.png" alt="Изображение" />
               <div class="catalog-item__block">
                 <span class="catalog-item__title">luxirous & trendy</span>
-                <span class="catalog-item__type">accesories</span>
+                <h2 class="catalog-item__type">accesories</h2>
               </div>
             </div>
             <div class="catalog-item">
               <img src="./assets/images/catalog-4.png" alt="Изображение" />
               <div class="catalog-item__block">
                 <span class="catalog-item__title">new arrivals</span>
-                <span class="catalog-item__type">for kids</span>
+                <h2 class="catalog-item__type">for kids</h2>
               </div>
             </div>
           </div>
         </section>
         <section class="fetured">
           <div class="fetured-wrapper">
-            <h2 class="fetured-caption">Fetured Items</h2>
+            <h3 class="fetured-caption">Fetured Items</h3>
             <span class="fetured-subcaption">
               Shop for items based on what we featured in this week
             </span>
             <div class="fetured-container">
               <div class="fetured-item">
-                <div class="fetured-item__image">
+                <figure class="fetured-item__image">
                   <img src="./assets/images/fetured-1.png" alt="Изображение" />
-                </div>
+                </figure>
                 <span class="fetured-item__title">Mango People T-shirt</span>
                 <span class="fetured-item__price">$52.00</span>
                 <div class="fetured-item__cart">
                   <div class="fetured-item__cart__image">
-                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                     width="23" 
+                     height="23"
+                     viewBox="0 0 32 29">
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z" transform="translate(-1181 -40)"/>
+                    </svg>
                   </div>
                   <span class="fetured-item__cart__title">Add to Cart</span>
                 </div>
               </div>
               <div class="fetured-item">
-                <div class="fetured-item__image">
+                <figure class="fetured-item__image">
                   <img src="./assets/images/fetured-2.png" alt="Изображение" />
-                </div>
+                </figure>
                 <span class="fetured-item__title">Mango People T-shirt</span>
                 <span class="fetured-item__price">$52.00</span>
                 <div class="fetured-item__cart">
                   <div class="fetured-item__cart__image">
-                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 32 29">
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z" transform="translate(-1181 -40)"/>
+                    </svg>
                   </div>
                   <span class="fetured-item__cart__title">Add to Cart</span>
                 </div>
               </div>
               <div class="fetured-item">
-                <div class="fetured-item__image">
+                <figure class="fetured-item__image">
                   <img src="./assets/images/fetured-3.png" alt="Изображение" />
-                </div>
+                </figure>
                 <span class="fetured-item__title">Mango People T-shirt</span>
                 <span class="fetured-item__price">$52.00</span>
                 <div class="fetured-item__cart">
                   <div class="fetured-item__cart__image">
-                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 32 29">
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z" transform="translate(-1181 -40)"/>
+                    </svg>
                   </div>
                   <span class="fetured-item__cart__title">Add to Cart</span>
                 </div>
               </div>
               <div class="fetured-item">
-                <div class="fetured-item__image">
+                <figure class="fetured-item__image">
                   <img src="./assets/images/fetured-4.png" alt="Изображение" />
-                </div>
+                </figure>
                 <span class="fetured-item__title">Mango People T-shirt</span>
                 <span class="fetured-item__price">$52.00</span>
                 <div class="fetured-item__cart">
                   <div class="fetured-item__cart__image">
-                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 32 29">
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z" transform="translate(-1181 -40)"/>
+                    </svg>
                   </div>
                   <span class="fetured-item__cart__title">Add to Cart</span>
                 </div>
               </div>
               <div class="fetured-item">
-                <div class="fetured-item__image">
+                <figure class="fetured-item__image">
                   <img src="./assets/images/fetured-5.png" alt="Изображение" />
-                </div>
+                </figure>
                 <span class="fetured-item__title">Mango People T-shirt</span>
                 <span class="fetured-item__price">$52.00</span>
                 <div class="fetured-item__cart">
                   <div class="fetured-item__cart__image">
-                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 32 29">
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z" transform="translate(-1181 -40)"/>
+                    </svg>
                   </div>
                   <span class="fetured-item__cart__title">Add to Cart</span>
                 </div>
               </div>
               <div class="fetured-item">
-                <div class="fetured-item__image">
+                <figure class="fetured-item__image">
                   <img src="./assets/images/fetured-6.png" alt="Изображение" />
-                </div>
+                </figure>
                 <span class="fetured-item__title">Mango People T-shirt</span>
                 <span class="fetured-item__price">$52.00</span>
                 <div class="fetured-item__cart">
                   <div class="fetured-item__cart__image">
-                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 32 29">
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z" transform="translate(-1181 -40)"/>
+                    </svg>
                   </div>
                   <span class="fetured-item__cart__title">Add to Cart</span>
                 </div>
               </div>
               <div class="fetured-item">
-                <div class="fetured-item__image">
+                <figure class="fetured-item__image">
                   <img src="./assets/images/fetured-7.png" alt="Изображение" />
-                </div>
+                </figure>
                 <span class="fetured-item__title">Mango People T-shirt</span>
                 <span class="fetured-item__price">$52.00</span>
                 <div class="fetured-item__cart">
                   <div class="fetured-item__cart__image">
-                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 32 29">
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z" transform="translate(-1181 -40)"/>
+                    </svg>
                   </div>
                   <span class="fetured-item__cart__title">Add to Cart</span>
                 </div>
               </div>
               <div class="fetured-item">
-                <div class="fetured-item__image">
+                <figure class="fetured-item__image">
                   <img src="./assets/images/fetured-8.png" alt="Изображение" />
-                </div>
+                </figure>
                 <span class="fetured-item__title">Mango People T-shirt</span>
                 <span class="fetured-item__price">$52.00</span>
                 <div class="fetured-item__cart">
                   <div class="fetured-item__cart__image">
-                    <img src="./assets/images/cart-w.svg" alt="Корзина" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 32 29">
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z" transform="translate(-1181 -40)"/>
+                    </svg>
                   </div>
                   <span class="fetured-item__cart__title">Add to Cart</span>
                 </div>
@@ -281,9 +362,9 @@
             </div>
             <div class="offer-right">
               <div class="offer-item">
-                <div class="offer-item__image">
+                <i class="offer-item__image">
                   <img src="./assets/images/offer-3.png" alt="Иконка" />
-                </div>
+                </i>
                 <div class="offer-item__plus">
                   <h5 class="offer-item__plus__title">Free Delivery</h5>
                   <p class="offer-item__plus__text">
@@ -293,9 +374,9 @@
                 </div>
               </div>
               <div class="offer-item">
-                <div class="offer-item__image">
+                <i class="offer-item__image">
                   <img src="./assets/images/offer-2.png" alt="Иконка" />
-                </div>
+                </i>
                 <div class="offer-item__plus">
                   <h5 class="offer-item__plus__title">Sales & discounts</h5>
                   <p class="offer-item__plus__text">
@@ -305,9 +386,9 @@
                 </div>
               </div>
               <div class="offer-item">
-                <div class="offer-item__image">
+                <i class="offer-item__image">
                   <img src="./assets/images/offer-1.png" alt="Иконка" />
-                </div>
+                </i>
                 <div class="offer-item__plus">
                   <h5 class="offer-item__plus__title">Quality assurance</h5>
                   <p class="offer-item__plus__text">
@@ -323,14 +404,16 @@
           <div class="subscribe-background">
             <div class="subscribe-wrapper">
               <div class="subscribe-left">
-                <div class="subscribe-avatar">
+                <figure class="subscribe-avatar">
                   <img src="./assets/images/avatar.png" alt="Аватар" />
-                </div>
+                </figure>
                 <div class="subscribe-review">
                   <blockquote class="subscribe-review__quote">
-                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-                    pulvinar purus condimentum a. Aliquam condimentum mattis
-                    neque sed pretium”
+                    <p>
+                      “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                      pulvinar purus condimentum a. Aliquam condimentum mattis
+                      neque sed pretium”
+                    </p>
                   </blockquote>
                   <span class="subscribe-review__author">Bin Burhan</span>
                   <span class="subscribe-review__about">Dhaka, Bd</span>
@@ -342,19 +425,13 @@
               </div>
               <div class="subscribe-right">
                 <div class="subscribe-block">
-                  <h4 class="subscribe-block__caption">subscribe</h4>
+                  <h5 class="subscribe-block__caption">subscribe</h4>
                   <span class="subscribe-block__subcaption">
                     for our newletter and promotion</span
                   >
                 </div>
-                <form class="subscribe-form" action="">
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    placeholder="Enter Your Email"
-                    required
-                  />
+                <form class="subscribe-form" name="subscribe-form" action="">
+                  <input type="text" placeholder="Enter Your Email" required />
                   <button>Subscribe</button>
                 </form>
               </div>
@@ -365,9 +442,9 @@
           <div class="info-wrapper">
             <div class="info-left">
               <a class="info-logo" href="./index.html">
-                <div class="info-logo__image">
+                <figure class="info-logo__image">
                   <img src="./assets/images/logo.png" alt="Лого" />
-                </div>
+                </figure>
                 <span class="info-logo__title">bran</span>
                 <span class="info-logo__title info-logo__title_last-letter"
                   >d</span
@@ -387,7 +464,7 @@
             </div>
             <div class="info-right">
               <div class="info-column">
-                <span class="info-column__title">company</span>
+                <h6 class="info-column__title">company</h6>
                 <ul class="info-column__list">
                   <li class="info-column__item">
                     <a href="#">Home</a>
@@ -407,7 +484,7 @@
                 </ul>
               </div>
               <div class="info-column">
-                <span class="info-column__title">information</span>
+                <h6 class="info-column__title">information</h6>
                 <ul class="info-column__list">
                   <li class="info-column__item">
                     <a href="#">Tearms & Condition</a>
@@ -427,7 +504,7 @@
                 </ul>
               </div>
               <div class="info-column">
-                <span class="info-column__title">shop category</span>
+                <h6 class="info-column__title">shop category</h6>
                 <ul class="info-column__list">
                   <li class="info-column__item">
                     <a href="#">Men</a>
@@ -500,5 +577,9 @@
         </div>
       </footer>
     </div>
+    <script
+      src="https://kit.fontawesome.com/545676c48a.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

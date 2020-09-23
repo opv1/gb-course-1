@@ -1,29 +1,6 @@
 @import './fonts';
+@import './base';
 @import './blocks/header';
-@import './blocks/catalog', './blocks/deal', './blocks/fetured', './blocks/info',
-  './blocks/offer', './blocks/subscribe';
+@import './blocks/main', './blocks/catalog', './blocks/deal', './blocks/fetured',
+  './blocks/info', './blocks/offer', './blocks/subscribe';
 @import './blocks/footer';
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Lato-Regular', Arial, Helvetica, sans-serif;
-}
-
-.page {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-width: 320px;
-  margin: auto;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: auto;
-}

@@ -45,6 +45,8 @@
     color: $blackColor;
 
     &__image {
+      margin: 0;
+
       img {
         display: block;
       }
@@ -152,6 +154,10 @@
 
         i {
           color: #a4a4a4;
+
+          &::before {
+            display: block;
+          }
         }
       }
     }

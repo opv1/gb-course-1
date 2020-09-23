@@ -1,8 +1,10 @@
+@import '../variables';
+
 .plus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #222224;
+  background-color: $blackColor;
   height: 341px;
 
   &-wrapper {

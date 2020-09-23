@@ -66,6 +66,8 @@
     }
 
     &__image {
+      margin: 0;
+
       img {
         display: block;
         object-fit: cover;
@@ -87,10 +89,8 @@
       border: solid 1px $whiteColor;
 
       &__image {
-        img {
+        svg {
           display: block;
-          width: 23px;
-          height: 23px;
         }
       }
 
