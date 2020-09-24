@@ -20,19 +20,37 @@
   }
 
   &-details {
+    position: relative;
+    margin-bottom: 18px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     summary {
+      cursor: pointer;
       display: flex;
       align-items: center;
       height: 37px;
       outline: none;
+      padding-left: 11px;
       border-left: 5px solid $pinkColor;
       border-bottom: 1px solid #ebebeb;
+      text-transform: uppercase;
+      font-family: 'Lato-Bold';
+      font-size: 14px;
+      color: #6f6e6e;
 
-      span {
-        text-transform: uppercase;
-        font-family: 'Lato-Bold';
-        font-size: 14px;
-        color: #6f6e6e;
+      &::before {
+        content: '\f0d7';
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        padding-right: 6px;
+        padding-left: 6px;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        color: $blackColor;
       }
     }
 
@@ -44,6 +62,7 @@
       margin-bottom: 39px;
 
       span {
+        cursor: pointer;
         margin-bottom: 10px;
         font-size: 14px;
         color: #6f6e6e;
@@ -51,6 +70,22 @@
         &:last-child {
           margin-bottom: 0;
         }
+
+        &:hover {
+          color: $pinkColor;
+        }
+      }
+    }
+  }
+
+  &-details[open] {
+    summary {
+      color: $pinkColor;
+
+      &::before {
+        content: '\f0d7';
+        color: $pinkColor;
+        transform: rotate(180deg);
       }
     }
   }
@@ -82,13 +117,11 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 179px;
-      margin-right: 114px;
+      width: 191px;
 
       div {
         display: flex;
         flex-wrap: wrap;
-        /*        justify-content: space-between; */
         align-content: space-between;
         height: 39px;
 
@@ -99,12 +132,7 @@
           font-size: 14px;
           color: #6f6e6e;
 
-          &:nth-child(3) {
-            padding-right: 0;
-            border-right: none;
-          }
-
-          &:last-child {
+          &:nth-child(3n + 3) {
             padding-right: 0;
             border-right: none;
           }
@@ -117,7 +145,6 @@
       flex-direction: column;
       justify-content: space-between;
       width: 272px;
-      margin-right: 58px;
 
       form {
         display: flex;
@@ -126,6 +153,7 @@
         height: 39px;
 
         label {
+          cursor: pointer;
           display: flex;
           align-items: center;
           width: 45px;
@@ -134,15 +162,12 @@
           font-size: 14px;
           color: #6f6e6e;
 
-          &:nth-child(4) {
-            margin-right: 0;
-          }
-
-          &:last-child {
+          &:nth-child(4n + 4) {
             margin-right: 0;
           }
 
           input {
+            cursor: pointer;
             margin: 0;
             margin-right: 9px;
           }
@@ -154,6 +179,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      width: 262px;
 
       &__block {
         display: flex;
@@ -184,10 +210,11 @@
     display: flex;
     align-items: center;
     padding-left: 9px;
+    padding-right: 9px;
     height: 50px;
     background-color: #f3f3f3;
 
-    div {
+    &__block {
       display: flex;
       align-items: center;
       height: 30px;
@@ -196,7 +223,7 @@
       background-color: $whiteColor;
 
       &:last-child {
-        margin-left: 0;
+        margin-right: 0;
       }
 
       span {
@@ -208,6 +235,7 @@
       }
 
       select {
+        cursor: pointer;
         border: none;
         outline: none;
         margin-left: 13px;

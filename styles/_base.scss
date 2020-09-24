@@ -24,4 +24,19 @@ body {
     -webkit-appearance: none;
     margin: 0;
   }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details > summary {
+    list-style: none;
+  }
+
+  /*   select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+  } */
 }
