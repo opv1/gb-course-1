@@ -1,0 +1,17 @@
+$blackColor: #222222;
+$whiteColor: #ffffff;
+$pinkColor: #f16d7f;
+$greyColor: #e6e6e6;
+
+@mixin transition($property, $duration) {
+  transition-property: $property;
+  transition-duration: $duration;
+}
+
+@function hoverColor($color) {
+  @return darken($color, 5%);
+}
+
+@function activeColor($color) {
+  @return darken($color, 10%);
+}
