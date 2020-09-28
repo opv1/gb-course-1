@@ -15,7 +15,7 @@
                 <a class="header-logo" href="./index.html">
                   <figure class="header-logo__image">
                     <img
-                      src=" <%=require('../assets/images/logo.png').default%>"
+                      src="<%=require('../assets/images/logo.png').default%>"
                       alt="Лого"
                     />
                   </figure>
@@ -31,25 +31,61 @@
                     name="header-form"
                     action=""
                   >
-                    <select name="header-form-select" form="header-form">
-                      <option value="disabled" selected>Browse</option>
-                      <option value="Category1">Category1</option>
-                      <option value="Category2">Category2</option>
-                    </select>
-                    <input
-                      name="header-form-input"
-                      form="header-form"
-                      type="search"
-                      placeholder="Search for item..."
-                      required
-                    />
-                    <button name="header-form-button" form="header-form">
-                      <i class="fas fa-search"></i>
-                    </button>
+                    <div class="header-search__form__fieldset">
+                      <input
+                        class="header-search__form__input-browse"
+                        id="browse"
+                        name="header-form-browse"
+                        form="header-form"
+                        type="checkbox"
+                      />
+                      <label for="browse">Browse</label>
+                      <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div class="header-search__form__fieldset">
+                      <input
+                        name="header-form-input"
+                        form="header-form"
+                        type="search"
+                        placeholder="Search for item..."
+                        required
+                      />
+                      <button name="header-form-button" form="header-form">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                    <div class="header-search__form__browse">
+                      <div class="header-search__form__container">
+                        <span>women</span>
+                        <div class="header-search__form__block">
+                          <a href="#">Dresses</a>
+                          <a href="#">Tops</a>
+                          <a href="#">Sweaters/Knits</a>
+                          <a href="#">Jackets/Coats</a>
+                          <a href="#">Blazers</a>
+                          <a href="#">Denim</a>
+                          <a href="#">Leggings/Pants</a>
+                          <a href="#">Skirts/Shorts</a>
+                          <a href="#">Accessories</a>
+                        </div>
+                      </div>
+                      <div class="header-search__form__container">
+                        <span>men</span>
+                        <div class="header-search__form__block">
+                          <a href="#">Tees/Tank tops</a>
+                          <a href="#">Shirts/Polos</a>
+                          <a href="#">Sweaters</a>
+                          <a href="#">Sweatshirts/Hoodies</a>
+                          <a href="#">Blazers</a>
+                          <a href="#">Jackets/vests</a>
+                        </div>
+                      </div>
+                      <div class="rectangle"></div>
+                    </div>
                   </form>
                 </div>
               </div>
-              <a class="header-cart" href="./cart.html">
+              <div class="header-cart" href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -72,7 +108,67 @@
                     transform="translate(-1181 -40)"
                   />
                 </svg>
-              </a>
+                <div class="header-cart__container">
+                  <div class="header-cart__block">
+                    <div class="header-cart__item">
+                      <div>
+                        <figure>
+                          <img
+                            src="<%=require('../assets/images/cart-1.png').default%>"
+                            alt="Товар"
+                          />
+                        </figure>
+                        <div>
+                          <span>Rebox Zane</span>
+                          <span class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span>1 x $250</span>
+                        </div>
+                      </div>
+                      <button>
+                        <i class="fas fa-times-circle"></i>
+                      </button>
+                    </div>
+                    <div class="header-cart__item">
+                      <div>
+                        <figure>
+                          <img
+                            src="<%=require('../assets/images/cart-1.png').default%>"
+                            alt="Товар"
+                          />
+                        </figure>
+                        <div>
+                          <span>Rebox Zane</span>
+                          <span class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span>1 x $250</span>
+                        </div>
+                      </div>
+                      <button>
+                        <i class="fas fa-times-circle"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="header-cart__total">
+                    <div>
+                      <span>total</span>
+                      <span>$500.00</span>
+                    </div>
+                    <a href="./checkout.html">checkout</a>
+                    <a href="./cart.html">go to cart</a>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="header-account">
               <a class="header-account__link" href="#">My Account</a>
@@ -89,13 +185,13 @@
               <a href="#">man</a>
             </li>
             <li class="header-navigation__item">
-              <a href="#">women</a>
+              <a href="./single.html">women</a>
             </li>
             <li class="header-navigation__item">
-              <a href="#">kids</a>
+              <a href="./product.html">kids</a>
             </li>
             <li class="header-navigation__item">
-              <a href="#">accoseriese</a>
+              <a href="./checkout.html">accoseriese</a>
             </li>
             <li class="header-navigation__item">
               <a href="#">featured</a>

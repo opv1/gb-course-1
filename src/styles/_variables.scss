@@ -8,6 +8,14 @@ $greyColor: #e6e6e6;
   transition-duration: $duration;
 }
 
+@mixin transformScale($scale) {
+  transform: scale($scale);
+}
+
+@mixin transformRotate($degree) {
+  transform: rotate($degree);
+}
+
 @function hoverColor($color) {
   @return darken($color, 5%);
 }
