@@ -121,6 +121,7 @@
         text-align: center;
         outline: none;
         border: 1px solid #eaeaea;
+        font-size: 13px;
         @include transition(background-color, 0.3s);
 
         &:focus {

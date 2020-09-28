@@ -278,16 +278,22 @@
 
     &:hover {
       box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+
+      img {
+        @include transformScale(1.1);
+      }
     }
 
     &__image {
       height: 280px;
       margin: 0;
+      overflow: hidden;
 
       img {
         display: block;
         object-fit: cover;
         object-position: center;
+        @include transition(transform, 0.3s);
       }
     }
 

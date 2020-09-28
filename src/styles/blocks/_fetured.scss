@@ -57,25 +57,26 @@
     &:hover {
       box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
 
-      .fetured-item__cart {
-        display: flex;
+      img {
+        filter: brightness(30%);
+        @include transformScale(1.1);
       }
 
-      .fetured-item__image {
-        img {
-          filter: brightness(30%);
-        }
+      .fetured-item__cart {
+        display: flex;
       }
     }
 
     &__image {
       height: 280px;
       margin: 0;
+      overflow: hidden;
 
       img {
         display: block;
         object-fit: cover;
         object-position: center;
+        @include transition(transform, 0.3s);
       }
     }
 

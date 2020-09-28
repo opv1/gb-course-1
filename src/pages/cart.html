@@ -31,18 +31,53 @@
                     name="header-form"
                     action=""
                   >
-                    <div class="header-search__form__fieldset">
+                    <div class="header-search__form__block">
                       <input
-                        class="header-search__form__input-browse"
                         id="browse"
-                        name="header-form-browse"
+                        name="header-form-input"
                         form="header-form"
                         type="checkbox"
                       />
-                      <label for="browse">Browse</label>
-                      <i class="fas fa-caret-down"></i>
+                      <label for="browse"
+                        >Browse<i class="fas fa-caret-down"></i
+                      ></label>
+                      <div class="header-search__form__block__browse">
+                        <div
+                          class="header-search__form__block__browse__container"
+                        >
+                          <span>women</span>
+                          <div
+                            class="header-search__form__block__browse__container__block"
+                          >
+                            <a href="#">Dresses</a>
+                            <a href="#">Tops</a>
+                            <a href="#">Sweaters/Knits</a>
+                            <a href="#">Jackets/Coats</a>
+                            <a href="#">Blazers</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Leggings/Pants</a>
+                            <a href="#">Skirts/Shorts</a>
+                            <a href="#">Accessories</a>
+                          </div>
+                        </div>
+                        <div
+                          class="header-search__form__block__browse__container"
+                        >
+                          <span>men</span>
+                          <div
+                            class="header-search__form__block__browse__container__block"
+                          >
+                            <a href="#">Tees/Tank tops</a>
+                            <a href="#">Shirts/Polos</a>
+                            <a href="#">Sweaters</a>
+                            <a href="#">Sweatshirts/Hoodies</a>
+                            <a href="#">Blazers</a>
+                            <a href="#">Jackets/vests</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="header-search__form__fieldset">
+                    <div class="header-search__form__block">
                       <input
                         name="header-form-input"
                         form="header-form"
@@ -54,63 +89,38 @@
                         <i class="fas fa-search"></i>
                       </button>
                     </div>
-                    <div class="header-search__form__browse">
-                      <div class="header-search__form__container">
-                        <span>women</span>
-                        <div class="header-search__form__block">
-                          <a href="#">Dresses</a>
-                          <a href="#">Tops</a>
-                          <a href="#">Sweaters/Knits</a>
-                          <a href="#">Jackets/Coats</a>
-                          <a href="#">Blazers</a>
-                          <a href="#">Denim</a>
-                          <a href="#">Leggings/Pants</a>
-                          <a href="#">Skirts/Shorts</a>
-                          <a href="#">Accessories</a>
-                        </div>
-                      </div>
-                      <div class="header-search__form__container">
-                        <span>men</span>
-                        <div class="header-search__form__block">
-                          <a href="#">Tees/Tank tops</a>
-                          <a href="#">Shirts/Polos</a>
-                          <a href="#">Sweaters</a>
-                          <a href="#">Sweatshirts/Hoodies</a>
-                          <a href="#">Blazers</a>
-                          <a href="#">Jackets/vests</a>
-                        </div>
-                      </div>
-                      <div class="rectangle"></div>
-                    </div>
                   </form>
                 </div>
               </div>
-              <div class="header-cart" href="#">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="29"
-                  viewBox="0 0 32 29"
-                >
-                  <defs>
-                    <style>
-                      .cls-1 {
-                        fill: #222;
-                        fill-rule: evenodd;
-                      }
-                    </style>
-                  </defs>
-                  <path
-                    id="Forma_1"
-                    data-name="Forma 1"
-                    class="cls-1"
-                    d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z"
-                    transform="translate(-1181 -40)"
-                  />
-                </svg>
+              <div class="header-cart">
+                <input id="cart" type="checkbox" />
+                <label for="cart">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="29"
+                    viewBox="0 0 32 29"
+                  >
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #222;
+                          fill-rule: evenodd;
+                        }
+                      </style>
+                    </defs>
+                    <path
+                      id="Forma_1"
+                      data-name="Forma 1"
+                      class="cls-1"
+                      d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z"
+                      transform="translate(-1181 -40)"
+                    />
+                  </svg>
+                </label>
                 <div class="header-cart__container">
                   <div class="header-cart__block">
-                    <div class="header-cart__item">
+                    <div class="header-cart__block__item">
                       <div>
                         <figure>
                           <img
@@ -120,7 +130,7 @@
                         </figure>
                         <div>
                           <span>Rebox Zane</span>
-                          <span class="stars">
+                          <span>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -134,7 +144,7 @@
                         <i class="fas fa-times-circle"></i>
                       </button>
                     </div>
-                    <div class="header-cart__item">
+                    <div class="header-cart__block__item">
                       <div>
                         <figure>
                           <img
@@ -144,7 +154,7 @@
                         </figure>
                         <div>
                           <span>Rebox Zane</span>
-                          <span class="stars">
+                          <span>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -160,7 +170,7 @@
                     </div>
                   </div>
                   <div class="header-cart__total">
-                    <div>
+                    <div class="header-cart__total__block">
                       <span>total</span>
                       <span>$500.00</span>
                     </div>
@@ -179,7 +189,7 @@
         <nav class="header-navigation">
           <ul class="header-navigation__list">
             <li class="header-navigation__item">
-              <a href="#">home</a>
+              <a href="./index.html">home</a>
             </li>
             <li class="header-navigation__item">
               <a href="#">man</a>
