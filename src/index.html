@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header-main">
+          <div class="header-wrapper">
+            <div class="header-container">
+              <div class="header-block">
+                <a class="header-logo" href="./index.html">
+                  <figure class="header-logo__image">
+                    <img
+                      src="<%=require('./assets/images/logo.png').default%>"
+                      alt="Лого"
+                    />
+                  </figure>
+                  <span class="header-logo__title">bran</span>
+                  <span
+                    class="header-logo__title header-logo__title_last-letter"
+                    >d</span
+                  >
+                </a>
+                <div class="header-search">
+                  <form
+                    class="header-search__form"
+                    name="header-form"
+                    action=""
+                  >
+                    <div class="header-search__form__block">
+                      <input
+                        id="browse"
+                        name="header-form-input"
+                        form="header-form"
+                        type="checkbox"
+                      />
+                      <label for="browse"
+                        >Browse<i class="fas fa-caret-down"></i
+                      ></label>
+                      <div class="header-search__form__block__browse">
+                        <div
+                          class="header-search__form__block__browse__container"
+                        >
+                          <span>women</span>
+                          <div
+                            class="header-search__form__block__browse__container__block"
+                          >
+                            <a href="#">Dresses</a>
+                            <a href="#">Tops</a>
+                            <a href="#">Sweaters/Knits</a>
+                            <a href="#">Jackets/Coats</a>
+                            <a href="#">Blazers</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Leggings/Pants</a>
+                            <a href="#">Skirts/Shorts</a>
+                            <a href="#">Accessories</a>
+                          </div>
+                        </div>
+                        <div
+                          class="header-search__form__block__browse__container"
+                        >
+                          <span>men</span>
+                          <div
+                            class="header-search__form__block__browse__container__block"
+                          >
+                            <a href="#">Tees/Tank tops</a>
+                            <a href="#">Shirts/Polos</a>
+                            <a href="#">Sweaters</a>
+                            <a href="#">Sweatshirts/Hoodies</a>
+                            <a href="#">Blazers</a>
+                            <a href="#">Jackets/vests</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header-search__form__block">
+                      <input
+                        name="header-form-input"
+                        form="header-form"
+                        type="search"
+                        placeholder="Search for item..."
+                        required
+                      />
+                      <button name="header-form-button" form="header-form">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="header-cart">
+                <input id="cart" type="checkbox" />
+                <label for="cart">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="29"
+                    viewBox="0 0 32 29"
+                  >
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #222;
+                          fill-rule: evenodd;
+                        }
+                      </style>
+                    </defs>
+                    <path
+                      id="Forma_1"
+                      data-name="Forma 1"
+                      class="cls-1"
+                      d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z"
+                      transform="translate(-1181 -40)"
+                    />
+                  </svg>
+                </label>
+                <div class="header-cart__container">
+                  <div class="header-cart__block">
+                    <div class="header-cart__block__item">
+                      <div>
+                        <figure>
+                          <img
+                            src="<%=require('./assets/images/cart-1.png').default%>"
+                            alt="Товар"
+                          />
+                        </figure>
+                        <div>
+                          <span>Rebox Zane</span>
+                          <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span>1 x $250</span>
+                        </div>
+                      </div>
+                      <button>
+                        <i class="fas fa-times-circle"></i>
+                      </button>
+                    </div>
+                    <div class="header-cart__block__item">
+                      <div>
+                        <figure>
+                          <img
+                            src="<%=require('./assets/images/cart-1.png').default%>"
+                            alt="Товар"
+                          />
+                        </figure>
+                        <div>
+                          <span>Rebox Zane</span>
+                          <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                          <span>1 x $250</span>
+                        </div>
+                      </div>
+                      <button>
+                        <i class="fas fa-times-circle"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="header-cart__total">
+                    <div class="header-cart__total__block">
+                      <span>total</span>
+                      <span>$500.00</span>
+                    </div>
+                    <a href="./checkout.html">checkout</a>
+                    <a href="./cart.html">go to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-account">
+              <a class="header-account__link" href="#">My Account</a>
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <nav class="header-navigation">
+          <ul class="header-navigation__list">
+            <li class="header-navigation__item">
+              <a href="./index.html">home</a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="#">man</a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="./single.html">women</a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="./product.html">kids</a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="./checkout.html">accoseriese</a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="#">featured</a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="#">hot deals</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="deal">
+          <div class="deal-wrapper">
+            <div class="deal-block">
+              <h1 class="deal-block__title">the brand</h1>
+              <span class="deal-block__subtitle"
+                >of luxerious
+                <span
+                  class="deal-block__subtitle deal-block__subtitle_last-word"
+                  >fashion</span
+                >
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="catalog">
+          <div class="catalog-wrapper">
+            <div class="catalog-item">
+              <img
+                src="<%=require('./assets/images/catalog-1.png').default%>"
+                alt="Изображение"
+              />
+              <div class="catalog-item__block">
+                <span class="catalog-item__title">hot deal</span>
+                <h2 class="catalog-item__type">for men</h2>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <img
+                src="<%=require('./assets/images/catalog-2.png').default%>"
+                alt="Изображение"
+              />
+              <div class="catalog-item__block">
+                <span class="catalog-item__title">30% offer</span>
+                <h2 class="catalog-item__type">women</h2>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <img
+                src="<%=require('./assets/images/catalog-3.png').default%>"
+                alt="Изображение"
+              />
+              <div class="catalog-item__block">
+                <span class="catalog-item__title">luxirous & trendy</span>
+                <h2 class="catalog-item__type">accesories</h2>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <img
+                src="<%=require('./assets/images/catalog-4.png').default%>"
+                alt="Изображение"
+              />
+              <div class="catalog-item__block">
+                <span class="catalog-item__title">new arrivals</span>
+                <h2 class="catalog-item__type">for kids</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="fetured">
+          <div class="fetured-wrapper">
+            <h3 class="fetured-caption">Fetured Items</h3>
+            <span class="fetured-subcaption">
+              Shop for items based on what we featured in this week
+            </span>
+            <div class="fetured-container">
+              <div class="fetured-item">
+                <figure class="fetured-item__image">
+                  <img
+                    src="<%=require('./assets/images/fetured-1.png').default%>"
+                    alt="Товар"
+                  />
+                </figure>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="23"
+                      viewBox="0 0 32 29"
+                    >
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path
+                        id="Forma_1"
+                        data-name="Forma 1"
+                        class="cls-2"
+                        d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z"
+                        transform="translate(-1181 -40)"
+                      />
+                    </svg>
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+              <div class="fetured-item">
+                <figure class="fetured-item__image">
+                  <img
+                    src="<%=require('./assets/images/fetured-2.png').default%>"
+                    alt="Товар"
+                  />
+                </figure>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="23"
+                      viewBox="0 0 32 29"
+                    >
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path
+                        id="Forma_1"
+                        data-name="Forma 1"
+                        class="cls-2"
+                        d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z"
+                        transform="translate(-1181 -40)"
+                      />
+                    </svg>
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+              <div class="fetured-item">
+                <figure class="fetured-item__image">
+                  <img
+                    src="<%=require('./assets/images/fetured-3.png').default%>"
+                    alt="Товар"
+                  />
+                </figure>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="23"
+                      viewBox="0 0 32 29"
+                    >
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path
+                        id="Forma_1"
+                        data-name="Forma 1"
+                        class="cls-2"
+                        d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z"
+                        transform="translate(-1181 -40)"
+                      />
+                    </svg>
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+              <div class="fetured-item">
+                <figure class="fetured-item__image">
+                  <img
+                    src="<%=require('./assets/images/fetured-4.png').default%>"
+                    alt="Товар"
+                  />
+                </figure>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="23"
+                      viewBox="0 0 32 29"
+                    >
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path
+                        id="Forma_1"
+                        data-name="Forma 1"
+                        class="cls-2"
+                        d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z"
+                        transform="translate(-1181 -40)"
+                      />
+                    </svg>
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+              <div class="fetured-item">
+                <figure class="fetured-item__image">
+                  <img
+                    src="<%=require('./assets/images/fetured-5.png').default%>"
+                    alt="Товар"
+                  />
+                </figure>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="23"
+                      viewBox="0 0 32 29"
+                    >
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path
+                        id="Forma_1"
+                        data-name="Forma 1"
+                        class="cls-2"
+                        d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z"
+                        transform="translate(-1181 -40)"
+                      />
+                    </svg>
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+              <div class="fetured-item">
+                <figure class="fetured-item__image">
+                  <img
+                    src="<%=require('./assets/images/fetured-6.png').default%>"
+                    alt="Товар"
+                  />
+                </figure>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="23"
+                      viewBox="0 0 32 29"
+                    >
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path
+                        id="Forma_1"
+                        data-name="Forma 1"
+                        class="cls-2"
+                        d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z"
+                        transform="translate(-1181 -40)"
+                      />
+                    </svg>
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+              <div class="fetured-item">
+                <figure class="fetured-item__image">
+                  <img
+                    src="<%=require('./assets/images/fetured-7.png').default%>"
+                    alt="Товар"
+                  />
+                </figure>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="23"
+                      viewBox="0 0 32 29"
+                    >
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path
+                        id="Forma_1"
+                        data-name="Forma 1"
+                        class="cls-2"
+                        d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z"
+                        transform="translate(-1181 -40)"
+                      />
+                    </svg>
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+              <div class="fetured-item">
+                <figure class="fetured-item__image">
+                  <img
+                    src="<%=require('./assets/images/fetured-8.png').default%>"
+                    alt="Товар"
+                  />
+                </figure>
+                <span class="fetured-item__title">Mango People T-shirt</span>
+                <span class="fetured-item__price">$52.00</span>
+                <div class="fetured-item__cart">
+                  <div class="fetured-item__cart__image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="23"
+                      viewBox="0 0 32 29"
+                    >
+                      <defs>
+                        <style>
+                          .cls-2 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path
+                        id="Forma_1"
+                        data-name="Forma 1"
+                        class="cls-2"
+                        d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z"
+                        transform="translate(-1181 -40)"
+                      />
+                    </svg>
+                  </div>
+                  <span class="fetured-item__cart__title">Add to Cart</span>
+                </div>
+              </div>
+            </div>
+            <a class="fetured-link" href="#">
+              <span>Browse All Product</span>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </a>
+          </div>
+        </section>
+        <section class="offer">
+          <div class="offer-wrapper">
+            <div class="offer-left">
+              <div class="offer-caption">
+                <span class="offer-caption__title"
+                  >30%
+                  <span class="offer-caption__title offer-caption__title_mod"
+                    >offer</span
+                  ></span
+                >
+                <span class="offer-caption__subtitle">for women</span>
+              </div>
+            </div>
+            <div class="offer-right">
+              <div class="offer-item">
+                <i class="offer-item__image">
+                  <img
+                    src="<%=require('./assets/images/offer-3.png').default%>"
+                    alt="Иконка"
+                  />
+                </i>
+                <div class="offer-item__plus">
+                  <h5 class="offer-item__plus__title">Free Delivery</h5>
+                  <p class="offer-item__plus__text">
+                    Worldwide delivery on all. Authorit tively morph
+                    next-generation innov tion with extensive models.
+                  </p>
+                </div>
+              </div>
+              <div class="offer-item">
+                <i class="offer-item__image">
+                  <img
+                    src="<%=require('./assets/images/offer-2.png').default%>"
+                    alt="Иконка"
+                  />
+                </i>
+                <div class="offer-item__plus">
+                  <h5 class="offer-item__plus__title">Sales & discounts</h5>
+                  <p class="offer-item__plus__text">
+                    Worldwide delivery on all. Authorit tively morph
+                    next-generation innov tion with extensive models.
+                  </p>
+                </div>
+              </div>
+              <div class="offer-item">
+                <i class="offer-item__image">
+                  <img
+                    src="<%=require('./assets/images/offer-1.png').default%>"
+                    alt="Иконка"
+                  />
+                </i>
+                <div class="offer-item__plus">
+                  <h5 class="offer-item__plus__title">Quality assurance</h5>
+                  <p class="offer-item__plus__text">
+                    Worldwide delivery on all. Authorit tively morph
+                    next-generation innov tion with extensive models.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="subscribe">
+          <div class="subscribe-background">
+            <div class="subscribe-wrapper">
+              <div class="subscribe-left">
+                <figure class="subscribe-avatar">
+                  <img
+                    src="<%=require('./assets/images/avatar.png').default%>"
+                    alt="Аватар"
+                  />
+                </figure>
+                <div class="subscribe-review">
+                  <blockquote class="subscribe-review__quote">
+                    <p>
+                      “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                      pulvinar purus condimentum a. Aliquam condimentum mattis
+                      neque sed pretium”
+                    </p>
+                  </blockquote>
+                  <span class="subscribe-review__author">Bin Burhan</span>
+                  <span class="subscribe-review__about">Dhaka, Bd</span>
+                  <div class="subscribe-review__pagination">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="subscribe-right">
+                <div class="subscribe-block">
+                  <h5 class="subscribe-block__caption">subscribe</h5>
+                  <span class="subscribe-block__subcaption">
+                    for our newletter and promotion</span
+                  >
+                </div>
+                <form class="subscribe-form" name="subscribe-form" action="">
+                  <input
+                    name="subscribe-form-input"
+                    form="subscribe-form"
+                    type="text"
+                    placeholder="Enter Your Email"
+                    required
+                  />
+                  <button name="subscribe-form-button" form="subscribe-form">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="info">
+          <div class="info-wrapper">
+            <div class="info-left">
+              <a class="info-logo" href="./index.html">
+                <figure class="info-logo__image">
+                  <img
+                    src="<%=require('./assets/images/logo.png').default%>"
+                    alt="Лого"
+                  />
+                </figure>
+                <span class="info-logo__title">bran</span>
+                <span class="info-logo__title info-logo__title_last-letter"
+                  >d</span
+                >
+              </a>
+              <p class="info-text">
+                Objectively transition extensive data rather than cross
+                functional solutions. Monotonectally syndicate multidisciplinary
+                materials before go forward benefits. Intrinsicly syndicate an
+                expanded array of processes and cross-unit partnerships.
+              </p>
+              <p class="info-text">
+                Efficiently plagiarize 24/365 action items and focused
+                infomediaries. Distinctively seize superior initiatives for
+                wireless technologies. Dynamically optimize.
+              </p>
+            </div>
+            <div class="info-right">
+              <div class="info-column">
+                <h6 class="info-column__title">company</h6>
+                <ul class="info-column__list">
+                  <li class="info-column__item">
+                    <a href="#">Home</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Shop</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">About</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">How It Works</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="info-column">
+                <h6 class="info-column__title">information</h6>
+                <ul class="info-column__list">
+                  <li class="info-column__item">
+                    <a href="#">Tearms & Condition</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">How to Buy</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">How to Sell</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Promotion</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="info-column">
+                <h6 class="info-column__title">shop category</h6>
+                <ul class="info-column__list">
+                  <li class="info-column__item">
+                    <a href="#">Men</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Women</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Child</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Apparel</a>
+                  </li>
+                  <li class="info-column__item">
+                    <a href="#">Brows All</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <span class="footer-copy"
+            >&copy; 2017 Brand All Rights Reserved.</span
+          >
+          <div class="footer-icons">
+            <a
+              class="footer-icon"
+              href="https://facebook.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              class="footer-icon"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              class="footer-icon"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              class="footer-icon"
+              href="https://www.pinterest.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a
+              class="footer-icon"
+              href="https://www.google.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/545676c48a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
