@@ -497,11 +497,126 @@
     }
 
     &__item {
+      position: relative;
       margin-right: 48px;
       padding-bottom: 20px;
 
       &:last-child {
         margin-right: 0;
+      }
+
+      input {
+        display: none;
+      }
+
+      input:checked ~ div {
+        display: flex;
+      }
+
+      label {
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Lato-Bold';
+        font-size: 14px;
+        color: $blackColor;
+        @include transition(color, 0.3s);
+
+        &:hover {
+          color: $pinkColor;
+        }
+      }
+
+      &__container {
+        position: absolute;
+        top: 28px;
+        left: -25px;
+        display: none;
+        background-color: $whiteColor;
+        padding: 19px 15px;
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          top: -11px;
+          left: 59px;
+          border: 5px solid transparent;
+          border-bottom: 5px solid #e6e6e6;
+        }
+
+        &::after {
+          top: -10px;
+          border-bottom: 5px solid white;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          margin-right: 31px;
+
+          &:last-child {
+            margin-right: 0;
+
+            div {
+              position: relative;
+              width: 255px;
+
+              img {
+                display: block;
+                object-fit: cover;
+                object-position: center;
+              }
+
+              span {
+                width: 71px;
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                text-transform: uppercase;
+                font-family: 'Lato-Black';
+                font-size: 22px;
+                letter-spacing: 0.55px;
+                color: $whiteColor;
+              }
+            }
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: 15px;
+            width: 235px;
+
+            span {
+              padding-bottom: 8px;
+              border-bottom: 1px solid #e8e8e8;
+              margin-bottom: 16px;
+              text-transform: uppercase;
+              font-size: 14px;
+              letter-spacing: 0.35px;
+              color: #232323;
+            }
+
+            li {
+              font-size: 14px;
+              letter-spacing: 0.35px;
+              color: #646464;
+              margin-bottom: 15px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
       }
 
       a {
