@@ -3,11 +3,12 @@
 .info {
   display: flex;
   justify-content: center;
-  padding: 109px 10px 89px;
+  padding: 109px 0 89px;
   width: 100%;
 
   &-wrapper {
     display: flex;
+    padding: 0 10px;
     width: 100%;
     max-width: 1140px;
   }
@@ -29,7 +30,10 @@
         margin: 0;
 
         img {
+          @include transition(transform, 0.3s);
+
           display: block;
+          width: 100%;
         }
       }
 
@@ -49,6 +53,12 @@
       &__title_last-letter {
         font-family: 'Lato-Black';
         color: $pinkColor;
+      }
+
+      &:hover {
+        img {
+          @include transformRotate(360deg);
+        }
       }
     }
 

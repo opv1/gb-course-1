@@ -455,7 +455,7 @@
         "unspecified": "bottomAlphabetical"
       }
     ],
-    "at-rule-blacklist": ["extend"],
+    "at-rule-disallowed-list": ["extend"],
     "at-rule-empty-line-before": [
       "always",
       {
@@ -660,7 +660,7 @@
     "shorthand-property-no-redundant-values": true,
     "string-no-newline": true,
     "time-min-milliseconds": 10,
-    "unit-blacklist": ["ch", "cm", "ex", "in", "mm", "pc", "pt", "q"],
+    "unit-disallowed-list": ["ch", "cm", "ex", "in", "mm", "pc", "pt", "q"],
     "unit-case": "lower",
     "unit-no-unknown": true,
     "unit-whitelist": null,
