@@ -2,36 +2,37 @@
 
 .carousel {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 777px;
-  background: #f7f7f7 url(../assets/images/carousel-1.png) center no-repeat;
+  background: #f7f7f7 url('../assets/images/carousel-1.png') center no-repeat;
   background-size: contain;
 
   &-nav {
+    @include transition(background-color, 0.3s);
+
     display: flex;
-    justify-content: center;
     align-self: center;
-    cursor: pointer;
+    justify-content: center;
     width: 47px;
     height: 47px;
     background-color: #d8d8d8;
-    @include transition(background-color, 0.3s);
-
-    &:hover {
-      background-color: hoverColor(#d8d8d8);
-    }
+    cursor: pointer;
 
     i {
       display: flex;
       align-items: center;
-      transform: rotate(90deg);
       color: $whiteColor;
+      transform: rotate(90deg);
 
       &::before {
         display: block;
       }
+    }
+
+    &:hover {
+      background-color: hovercolor(#d8d8d8);
     }
 
     &:last-child {

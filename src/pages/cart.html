@@ -10,28 +10,28 @@
       <header class="header">
         <div class="header-main">
           <div class="header-wrapper">
-            <div class="header-container">
-              <div class="header-block">
-                <a class="header-logo" href="./index.html">
-                  <figure class="header-logo__image">
+            <div class="header-shell">
+              <div class="header-container">
+                <a class="header-container__logo" href="./index.html">
+                  <figure class="header-container__logo__image">
                     <img
                       src="<%=require('../assets/images/logo.png').default%>"
                       alt="Лого"
                     />
                   </figure>
-                  <span class="header-logo__title">bran</span>
+                  <span class="header-container__logo__title">bran</span>
                   <span
-                    class="header-logo__title header-logo__title_last-letter"
+                    class="header-container__logo__title header-container__logo__title_last-letter"
                     >d</span
                   >
                 </a>
-                <div class="header-search">
+                <div class="header-container__search">
                   <form
-                    class="header-search__form"
+                    class="header-container__search__form"
                     name="header-form"
                     action=""
                   >
-                    <div class="header-search__form__block">
+                    <div class="header-container__search__form__element">
                       <input
                         id="browse"
                         name="header-form-input"
@@ -41,14 +41,14 @@
                       <label for="browse"
                         >Browse<i class="fas fa-caret-down"></i
                       ></label>
-                      <div class="header-search__form__block__browse">
+                      <div
+                        class="header-container__search__form__element__browse"
+                      >
                         <div
-                          class="header-search__form__block__browse__container"
+                          class="header-container__search__form__element__browse__block"
                         >
                           <span>women</span>
-                          <div
-                            class="header-search__form__block__browse__container__block"
-                          >
+                          <div>
                             <a href="#">Dresses</a>
                             <a href="#">Tops</a>
                             <a href="#">Sweaters/Knits</a>
@@ -61,12 +61,10 @@
                           </div>
                         </div>
                         <div
-                          class="header-search__form__block__browse__container"
+                          class="header-container__search__form__element__browse__block"
                         >
                           <span>men</span>
-                          <div
-                            class="header-search__form__block__browse__container__block"
-                          >
+                          <div>
                             <a href="#">Tees/Tank tops</a>
                             <a href="#">Shirts/Polos</a>
                             <a href="#">Sweaters</a>
@@ -77,7 +75,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="header-search__form__block">
+                    <div class="header-container__search__form__element">
                       <input
                         name="header-form-input"
                         form="header-form"
@@ -92,122 +90,194 @@
                   </form>
                 </div>
               </div>
-              <div class="header-cart">
-                <input id="cart" type="checkbox" />
-                <label for="cart">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="29"
-                    viewBox="0 0 32 29"
-                  >
-                    <defs>
-                      <style>
-                        .cls-1 {
-                          fill: #222;
-                          fill-rule: evenodd;
-                        }
-                      </style>
-                    </defs>
-                    <path
-                      id="Forma_1"
-                      data-name="Forma 1"
-                      class="cls-1"
-                      d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z"
-                      transform="translate(-1181 -40)"
-                    />
-                  </svg>
-                </label>
-                <div class="header-cart__container">
-                  <div class="header-cart__block">
-                    <div class="header-cart__block__item">
-                      <div>
-                        <figure>
-                          <img
-                            src="<%=require('../assets/images/cart-1.png').default%>"
-                            alt="Товар"
-                          />
-                        </figure>
+              <div class="header-container">
+                <div class="header-container__cart">
+                  <input id="cart" type="checkbox" />
+                  <label for="cart">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="29"
+                      viewBox="0 0 32 29"
+                    >
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #222;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path
+                        id="Forma_1"
+                        data-name="Forma 1"
+                        class="cls-1"
+                        d="M1182.18,42.364h3.4l4.83,17.455a1.183,1.183,0,0,0,1.14.867h14.86a1.175,1.175,0,0,0,1.08-.709l5.41-12.412a1.186,1.186,0,0,0-1.09-1.655H1195.4a1.182,1.182,0,0,0,0,2.364H1210l-4.38,10.048h-13.18l-4.83-17.455a1.186,1.186,0,0,0-1.15-.867h-4.28A1.182,1.182,0,0,0,1182.18,42.364ZM1190.43,69a2.679,2.679,0,1,0-2.68-2.679A2.681,2.681,0,0,0,1190.43,69Zm16.77,0h0.19a2.686,2.686,0,0,0-.37-5.359A2.683,2.683,0,0,0,1207.2,69Z"
+                        transform="translate(-1181 -40)"
+                      />
+                    </svg>
+                  </label>
+                  <div class="header-container__cart__element">
+                    <div class="header-container__cart__element__block">
+                      <div class="header-container__cart__element__block__item">
                         <div>
-                          <span>Rebox Zane</span>
-                          <span>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </span>
-                          <span>1 x $250</span>
+                          <figure>
+                            <img
+                              src="<%=require('../assets/images/cart-1.png').default%>"
+                              alt="Товар"
+                            />
+                          </figure>
+                          <div>
+                            <span>Rebox Zane</span>
+                            <span>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span>1 x $250</span>
+                          </div>
                         </div>
+                        <button>
+                          <i class="fas fa-times-circle"></i>
+                        </button>
                       </div>
-                      <button>
-                        <i class="fas fa-times-circle"></i>
-                      </button>
-                    </div>
-                    <div class="header-cart__block__item">
-                      <div>
-                        <figure>
-                          <img
-                            src="<%=require('../assets/images/cart-1.png').default%>"
-                            alt="Товар"
-                          />
-                        </figure>
+                      <div class="header-container__cart__element__block__item">
                         <div>
-                          <span>Rebox Zane</span>
-                          <span>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </span>
-                          <span>1 x $250</span>
+                          <figure>
+                            <img
+                              src="<%=require('../assets/images/cart-1.png').default%>"
+                              alt="Товар"
+                            />
+                          </figure>
+                          <div>
+                            <span>Rebox Zane</span>
+                            <span>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span>1 x $250</span>
+                          </div>
                         </div>
+                        <button>
+                          <i class="fas fa-times-circle"></i>
+                        </button>
                       </div>
-                      <button>
-                        <i class="fas fa-times-circle"></i>
-                      </button>
                     </div>
-                  </div>
-                  <div class="header-cart__total">
-                    <div class="header-cart__total__block">
-                      <span>total</span>
-                      <span>$500.00</span>
+                    <div class="header-container__cart__element__total">
+                      <div
+                        class="header-container__cart__element__total__block"
+                      >
+                        <span>total</span>
+                        <span>$500.00</span>
+                      </div>
+                      <a href="./checkout.html">checkout</a>
+                      <a href="./cart.html">go to cart</a>
                     </div>
-                    <a href="./checkout.html">checkout</a>
-                    <a href="./cart.html">go to cart</a>
                   </div>
                 </div>
+                <div class="header-container__account">
+                  <a class="header-container__account__link" href="#"
+                    >My Account</a
+                  >
+                  <i class="fas fa-caret-down"></i>
+                </div>
               </div>
-            </div>
-            <div class="header-account">
-              <a class="header-account__link" href="#">My Account</a>
-              <i class="fas fa-caret-down"></i>
             </div>
           </div>
         </div>
         <nav class="header-navigation">
-          <ul class="header-navigation__list">
-            <li class="header-navigation__item">
+          <div class="header-navigation__burger">
+            <i class="header-navigation__burger__icon"></i>
+            <span class="header-navigation__burger__title">navigation</span>
+          </div>
+          <ul class="header-navigation__list-desktop">
+            <li class="header-navigation__list-desktop__item">
               <a href="./index.html">home</a>
             </li>
-            <li class="header-navigation__item">
-              <a href="#">man</a>
+            <li class="header-navigation__list-desktop__item">
+              <input id="nav" type="checkbox" />
+              <label for="nav">man</label>
+              <div class="header-navigation__list-desktop__item__container">
+                <div>
+                  <ul>
+                    <span>women</span>
+                    <li>Dresses</li>
+                    <li>Tops</li>
+                    <li>Sweaters/Knits</li>
+                    <li>Jackets/Coats</li>
+                    <li>Blazers</li>
+                    <li>Denim</li>
+                    <li>Leggings/Pants</li>
+                    <li>Skirts/Shorts</li>
+                    <li>Accessories</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <span>women</span>
+                    <li>Dresses</li>
+                    <li>Tops</li>
+                    <li>Sweaters/Knits</li>
+                    <li>Jackets/Coats</li>
+                  </ul>
+                  <ul>
+                    <span>women</span>
+                    <li>Dresses</li>
+                    <li>Tops</li>
+                    <li>Sweaters/Knits</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <span>women</span>
+                    <li>Dresses</li>
+                    <li>Tops</li>
+                    <li>Sweaters/Knits</li>
+                    <li>Jackets/Coats</li>
+                  </ul>
+                  <div>
+                    <img
+                      src="<%=require('../assets/images/header-men.png').default%>"
+                      alt="Изображение"
+                    />
+                    <span>super sale!</span>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="header-navigation__item">
+            <li class="header-navigation__list-desktop__item">
               <a href="./single.html">women</a>
             </li>
-            <li class="header-navigation__item">
+            <li class="header-navigation__list-desktop__item">
               <a href="./product.html">kids</a>
             </li>
-            <li class="header-navigation__item">
+            <li class="header-navigation__list-desktop__item">
               <a href="./checkout.html">accoseriese</a>
             </li>
-            <li class="header-navigation__item">
+            <li class="header-navigation__list-desktop__item">
               <a href="#">featured</a>
             </li>
-            <li class="header-navigation__item">
+            <li class="header-navigation__list-desktop__item">
               <a href="#">hot deals</a>
+            </li>
+          </ul>
+          <ul class="header-navigation__list-mobile">
+            <li class="header-navigation__list-mobile__item">
+              <a href="#">item</a>
+            </li>
+            <li class="header-navigation__list-mobile__item">
+              <a href="#">item</a>
+            </li>
+            <li class="header-navigation__list-mobile__item">
+              <a href="#">item</a>
+            </li>
+            <li class="header-navigation__list-mobile__item">
+              <a href="#">item</a>
             </li>
           </ul>
         </nav>
@@ -448,36 +518,40 @@
           <div class="subscribe-background">
             <div class="subscribe-wrapper">
               <div class="subscribe-left">
-                <figure class="subscribe-avatar">
+                <figure class="subscribe-left__avatar">
                   <img
                     src="<%=require('../assets/images/avatar.png').default%>"
                     alt="Аватар"
                   />
                 </figure>
-                <div class="subscribe-review">
-                  <blockquote class="subscribe-review__quote">
+                <div class="subscribe-left__review">
+                  <blockquote class="subscribe-left__review__quote">
                     <p>
                       “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
                       pulvinar purus condimentum a. Aliquam condimentum mattis
                       neque sed pretium”
                     </p>
                   </blockquote>
-                  <span class="subscribe-review__author">Bin Burhan</span>
-                  <span class="subscribe-review__about">Dhaka, Bd</span>
-                  <div class="subscribe-review__pagination">
+                  <span class="subscribe-left__review__author">Bin Burhan</span>
+                  <span class="subscribe-left__review__about">Dhaka, Bd</span>
+                  <div class="subscribe-left__review__pagination">
                     <span></span>
                     <span></span>
                   </div>
                 </div>
               </div>
               <div class="subscribe-right">
-                <div class="subscribe-block">
-                  <h5 class="subscribe-block__caption">subscribe</h5>
-                  <span class="subscribe-block__subcaption">
+                <div class="subscribe-right__block">
+                  <h5 class="subscribe-right__block__caption">subscribe</h5>
+                  <span class="subscribe-right__block__subcaption">
                     for our newletter and promotion</span
                   >
                 </div>
-                <form class="subscribe-form" name="subscribe-form" action="">
+                <form
+                  class="subscribe-right__form"
+                  name="subscribe-form"
+                  action=""
+                >
                   <input
                     name="subscribe-form-input"
                     form="subscribe-form"
@@ -496,87 +570,91 @@
         <section class="info">
           <div class="info-wrapper">
             <div class="info-left">
-              <a class="info-logo" href="./index.html">
-                <figure class="info-logo__image">
+              <a class="info-left__logo" href="./index.html">
+                <figure class="info-left__logo__image">
                   <img
                     src="<%=require('../assets/images/logo.png').default%>"
                     alt="Лого"
                   />
                 </figure>
-                <span class="info-logo__title">bran</span>
-                <span class="info-logo__title info-logo__title_last-letter"
+                <span class="info-left__logo__title">bran</span>
+                <span
+                  class="info-left__logo__title info-left__logo__title_last-letter"
                   >d</span
                 >
               </a>
-              <p class="info-text">
-                Objectively transition extensive data rather than cross
-                functional solutions. Monotonectally syndicate multidisciplinary
-                materials before go forward benefits. Intrinsicly syndicate an
-                expanded array of processes and cross-unit partnerships.
-              </p>
-              <p class="info-text">
-                Efficiently plagiarize 24/365 action items and focused
-                infomediaries. Distinctively seize superior initiatives for
-                wireless technologies. Dynamically optimize.
-              </p>
+              <div class="info-left__block">
+                <p class="info-left__block__text">
+                  Objectively transition extensive data rather than cross
+                  functional solutions. Monotonectally syndicate
+                  multidisciplinary materials before go forward benefits.
+                  Intrinsicly syndicate an expanded array of processes and
+                  cross-unit partnerships.
+                </p>
+                <p class="info-left__block__text">
+                  Efficiently plagiarize 24/365 action items and focused
+                  infomediaries. Distinctively seize superior initiatives for
+                  wireless technologies. Dynamically optimize.
+                </p>
+              </div>
             </div>
             <div class="info-right">
-              <div class="info-column">
-                <h6 class="info-column__title">company</h6>
-                <ul class="info-column__list">
-                  <li class="info-column__item">
+              <div class="info-right__column">
+                <h6 class="info-right__column__title">company</h6>
+                <ul class="info-right__column__list">
+                  <li class="info-right__column__item">
                     <a href="#">Home</a>
                   </li>
-                  <li class="info-column__item">
+                  <li class="info-right__column__item">
                     <a href="#">Shop</a>
                   </li>
-                  <li class="info-column__item">
+                  <li class="info-right__column__item">
                     <a href="#">About</a>
                   </li>
-                  <li class="info-column__item">
+                  <li class="info-right__column__item">
                     <a href="#">How It Works</a>
                   </li>
-                  <li class="info-column__item">
+                  <li class="info-right__column__item">
                     <a href="#">Contact</a>
                   </li>
                 </ul>
               </div>
-              <div class="info-column">
-                <h6 class="info-column__title">information</h6>
-                <ul class="info-column__list">
-                  <li class="info-column__item">
+              <div class="info-right__column">
+                <h6 class="info-right__column__title">information</h6>
+                <ul class="info-right__column__list">
+                  <li class="info-right__column__item">
                     <a href="#">Tearms & Condition</a>
                   </li>
-                  <li class="info-column__item">
+                  <li class="info-right__column__item">
                     <a href="#">Privacy Policy</a>
                   </li>
-                  <li class="info-column__item">
+                  <li class="info-right__column__item">
                     <a href="#">How to Buy</a>
                   </li>
-                  <li class="info-column__item">
+                  <li class="info-right__column__item">
                     <a href="#">How to Sell</a>
                   </li>
-                  <li class="info-column__item">
+                  <li class="info-right__column__item">
                     <a href="#">Promotion</a>
                   </li>
                 </ul>
               </div>
-              <div class="info-column">
-                <h6 class="info-column__title">shop category</h6>
-                <ul class="info-column__list">
-                  <li class="info-column__item">
+              <div class="info-right__column">
+                <h6 class="info-right__column__title">shop category</h6>
+                <ul class="info-right__column__list">
+                  <li class="info-right__column__item">
                     <a href="#">Men</a>
                   </li>
-                  <li class="info-column__item">
+                  <li class="info-right__column__item">
                     <a href="#">Women</a>
                   </li>
-                  <li class="info-column__item">
+                  <li class="info-right__column__item">
                     <a href="#">Child</a>
                   </li>
-                  <li class="info-column__item">
+                  <li class="info-right__column__item">
                     <a href="#">Apparel</a>
                   </li>
-                  <li class="info-column__item">
+                  <li class="info-right__column__item">
                     <a href="#">Brows All</a>
                   </li>
                 </ul>
@@ -590,9 +668,9 @@
           <span class="footer-copy"
             >&copy; 2017 Brand All Rights Reserved.</span
           >
-          <div class="footer-icons">
+          <div class="footer-social">
             <a
-              class="footer-icon"
+              class="footer-social__icon"
               href="https://facebook.com/"
               target="_blank"
               rel="noreferrer"
@@ -600,7 +678,7 @@
               <i class="fab fa-facebook-f"></i>
             </a>
             <a
-              class="footer-icon"
+              class="footer-social__icon"
               href="https://twitter.com/"
               target="_blank"
               rel="noreferrer"
@@ -608,7 +686,7 @@
               <i class="fab fa-twitter"></i>
             </a>
             <a
-              class="footer-icon"
+              class="footer-social__icon"
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noreferrer"
@@ -616,7 +694,7 @@
               <i class="fab fa-linkedin-in"></i>
             </a>
             <a
-              class="footer-icon"
+              class="footer-social__icon"
               href="https://www.pinterest.com/"
               target="_blank"
               rel="noreferrer"
@@ -624,7 +702,7 @@
               <i class="fab fa-pinterest-p"></i>
             </a>
             <a
-              class="footer-icon"
+              class="footer-social__icon"
               href="https://www.google.com/"
               target="_blank"
               rel="noreferrer"

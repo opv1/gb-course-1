@@ -3,10 +3,11 @@
 .offer {
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 529px;
   margin-top: 113px;
   margin-bottom: 97px;
+  padding: 0 10px;
+  width: 100%;
+  min-height: 529px;
 
   &-wrapper {
     display: flex;
@@ -16,79 +17,155 @@
 
   &-left {
     width: 100%;
-    box-shadow: inset 0px 0px 70px 50px rgba(0, 0, 0, 0.6);
-    background: url(../assets/images/offer-4.png) center no-repeat;
+    height: 100%;
+    box-shadow: inset 0 0 70px 50px rgba(0, 0, 0, 0.6);
+    background: url('../assets/images/offer-4.png') center no-repeat;
     background-size: cover;
-  }
 
-  &-caption {
-    display: flex;
-    flex-direction: column;
-    margin-top: 146px;
-    margin-left: 39px;
+    &__caption {
+      display: flex;
+      flex-direction: column;
+      margin-top: 146px;
+      margin-left: 39px;
 
-    &__title {
-      text-transform: uppercase;
-      font-family: 'Lato-Bold';
-      font-size: 53.5px;
-      letter-spacing: 1.34px;
-      color: $whiteColor;
-    }
+      &__title {
+        font-family: 'Lato-Bold';
+        font-size: 53.5px;
+        letter-spacing: 1.34px;
+        text-transform: uppercase;
+        color: $whiteColor;
+      }
 
-    &__title_mod {
-      color: $pinkColor;
-    }
+      &__title_mod {
+        color: $pinkColor;
+      }
 
-    &__subtitle {
-      text-transform: uppercase;
-      font-family: 'Lato-Bold';
-      font-size: 32px;
-      letter-spacing: 0.8px;
-      color: $whiteColor;
+      &__subtitle {
+        font-family: 'Lato-Bold';
+        font-size: 32px;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: $whiteColor;
+      }
     }
   }
 
   &-right {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    min-width: 375px;
+    justify-content: space-between;
+    padding: 48px 43px 66px 36px;
+    height: 100%;
     background-color: $blackColor;
+
+    &__item {
+      display: flex;
+
+      &__image {
+        margin-right: 31px;
+
+        img {
+          display: block;
+        }
+      }
+
+      &__plus {
+        margin-top: 5px;
+
+        &__title {
+          margin: 0;
+          margin-bottom: 17px;
+          font-family: 'Lato-Bold';
+          font-size: 20px;
+          letter-spacing: 0.5px;
+          color: #fbfbfb;
+        }
+
+        &__text {
+          margin: 0;
+          width: 219px;
+          font-family: 'Lato-Light';
+          font-size: 14px;
+          line-height: 1.71;
+          letter-spacing: 0.35px;
+          color: #fbfbfb;
+        }
+      }
+    }
   }
+}
 
-  &-item {
-    display: flex;
-
-    img {
-      display: block;
+@media screen and (max-width: 884px) {
+  .offer {
+    &-wrapper {
+      flex-direction: column;
     }
 
-    &__image {
-      margin-right: 31px;
+    &-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    &__plus {
-      margin-top: 5px;
+    &-caption {
+      margin: 0;
+    }
 
-      &__title {
-        margin: 0;
-        margin-bottom: 17px;
-        font-family: 'Lato-Bold';
-        font-size: 20px;
-        letter-spacing: 0.5px;
-        color: #fbfbfb;
+    &-right {
+      flex-direction: row;
+      padding: 10px 0;
+    }
+
+    &-item {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+
+      &__image {
+        margin-right: 0;
       }
 
-      &__text {
-        width: 219px;
-        margin: 0;
-        font-family: 'Lato-Light';
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.35px;
-        color: #fbfbfb;
+      &__plus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 17px;
+        text-align: center;
       }
     }
+  }
+}
+
+@media screen and (max-width: 738px) {
+  .offer {
+    &-left {
+      height: 300px;
+    }
+
+    &-right {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+
+    /*     &-item {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px;
+
+      &__image {
+        margin-right: 0;
+      }
+
+      &__plus {
+        margin-top: 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    } */
   }
 }

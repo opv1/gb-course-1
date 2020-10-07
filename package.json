@@ -7,6 +7,7 @@
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open 'Chrome' --watch",
     "deploy": "cross-env NODE_ENV=production gh-pages -d dist",
+    "stylelint": "npx stylelint \"**/*.scss\" --fix",
     "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json"
   },
   "repository": {
@@ -38,6 +39,11 @@
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0",
     "terser-webpack-plugin": "^4.2.2",
     "webpack": "^4.44.2",
     "webpack-bundle-analyzer": "^3.9.0",
@@ -47,6 +53,7 @@
   },
   "dependencies": {
     "core-js": "^3.4.1",
+    "loadash": "^1.0.0",
     "normalize.css": "^8.0.1"
   },
   "browserslist": "> 0.25%, not dead"
