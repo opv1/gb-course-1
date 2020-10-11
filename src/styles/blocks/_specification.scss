@@ -20,193 +20,192 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -85px;
-    margin-bottom: 119px;
+    margin: -85px 0 119px;
     border: 1px solid #eaeaea;
     padding-top: 73px;
     width: 100%;
     background-color: $whiteColor;
-  }
 
-  &-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &__caption {
-      position: relative;
-      margin: 0;
-      margin-bottom: 18px;
-      border-bottom: solid 1px #eaeaea;
-      padding-bottom: 15px;
-      font-family: 'Lato-Bold';
-      font-size: 14px;
-      text-transform: uppercase;
-      color: $pinkColor;
-
-      &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -1px;
-        width: 63px;
-        height: 2px;
-        background-color: $pinkColor;
-        transform: translate(-50%);
-      }
-    }
-
-    &__title {
-      margin-bottom: 53px;
-      font-family: 'Lato-Black';
-      font-size: 18px;
-      text-transform: uppercase;
-      color: #4d4d4d;
-    }
-
-    &__block {
+    &__details {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 63px;
-      border-bottom: 1px solid #eaeaea;
-      padding-bottom: 43px;
 
-      p {
+      &__caption {
+        position: relative;
         margin: 0;
-        margin-bottom: 28px;
-        width: 619px;
-        font-family: 'Lato-Light';
+        margin-bottom: 18px;
+        border-bottom: solid 1px #eaeaea;
+        padding-bottom: 15px;
+        font-family: 'Lato-Bold';
         font-size: 14px;
-        text-align: center;
-        color: #5e5e5e;
-      }
+        text-transform: uppercase;
+        color: $pinkColor;
 
-      div {
-        margin-bottom: 37px;
-
-        span {
-          font-family: 'Lato-Bold';
-          font-size: 14px;
-          text-transform: uppercase;
-          color: #b9b9b9;
-
-          strong {
-            text-transform: uppercase;
-            color: #2f2f2f;
-          }
-
-          &:last-child {
-            margin-left: 44px;
-          }
+        &::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -1px;
+          width: 63px;
+          height: 2px;
+          background-color: $pinkColor;
+          transform: translate(-50%);
         }
       }
 
-      span {
-        font-family: 'Lato-Bold';
-        font-size: 24px;
-        color: $pinkColor;
+      &__title {
+        margin-bottom: 53px;
+        font-family: 'Lato-Black';
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #4d4d4d;
       }
-    }
-  }
 
-  &-form {
-    margin-bottom: 122px;
-    width: 537px;
-
-    div {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 28px;
-
-      div {
+      &__block {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin-bottom: 63px;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 43px;
 
-        span {
-          margin-bottom: 16px;
-          font-family: 'Lato-Bold';
+        p {
+          margin: 0;
+          margin-bottom: 28px;
+          width: 619px;
+          font-family: 'Lato-Light';
           font-size: 14px;
-          text-transform: uppercase;
-          color: #2f2f2f;
+          text-align: center;
+          color: #5e5e5e;
         }
 
-        select {
-          outline: none;
-          border: solid 1px #eaeaea;
-          padding-left: 14px;
-          width: 144px;
-          height: 35px;
-          font-size: 14px;
-          color: $blackColor;
-          background-color: $whiteColor;
-          cursor: pointer;
+        div {
+          margin-bottom: 37px;
 
-          option {
+          span {
+            font-family: 'Lato-Bold';
             font-size: 14px;
-            color: $blackColor;
+            text-transform: uppercase;
+            color: #b9b9b9;
 
-            &:first-child {
-              color: #bcbcbc;
+            strong {
+              text-transform: uppercase;
+              color: #2f2f2f;
+            }
+
+            &:last-child {
+              margin-left: 44px;
             }
           }
         }
 
-        input {
-          @include transition(background-color, 0.3s);
-
-          outline: none;
-          border: solid 1px #eaeaea;
-          padding-left: 14px;
-          width: 144px;
-          height: 35px;
-          font-size: 14px;
-          color: $blackColor;
-          background-color: $whiteColor;
-
-          &::placeholder {
-            color: #bcbcbc;
-          }
-
-          &:focus {
-            background-color: darken($whiteColor, 2%);
-          }
+        span {
+          font-family: 'Lato-Bold';
+          font-size: 24px;
+          color: $pinkColor;
         }
       }
     }
 
-    button {
-      @include transition(background-color, 0.3s);
+    &__form {
+      margin-bottom: 122px;
+      width: 537px;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      outline: none;
-      border: 1px solid $pinkColor;
-      padding: 16px 0;
-      width: 100%;
-      font-family: 'Lato-Bold';
-      font-size: 16px;
-      color: $pinkColor;
-      background-color: $whiteColor;
-      cursor: pointer;
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 28px;
 
-      svg {
-        display: block;
-        margin-right: 15px;
-      }
+        div {
+          display: flex;
+          flex-direction: column;
 
-      &:hover {
-        color: $whiteColor;
-        background-color: hovercolor($pinkColor);
+          span {
+            margin-bottom: 16px;
+            font-family: 'Lato-Bold';
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #2f2f2f;
+          }
 
-        svg path {
-          fill: $whiteColor;
+          select {
+            outline: none;
+            border: solid 1px #eaeaea;
+            padding-left: 14px;
+            width: 144px;
+            height: 35px;
+            font-size: 14px;
+            color: $blackColor;
+            background-color: $whiteColor;
+            cursor: pointer;
+
+            option {
+              font-size: 14px;
+              color: $blackColor;
+
+              &:first-child {
+                color: #bcbcbc;
+              }
+            }
+          }
+
+          input {
+            @include transition(background-color, 0.3s);
+
+            outline: none;
+            border: solid 1px #eaeaea;
+            padding-left: 14px;
+            width: 144px;
+            height: 35px;
+            font-size: 14px;
+            color: $blackColor;
+            background-color: $whiteColor;
+
+            &::placeholder {
+              color: #bcbcbc;
+            }
+
+            &:focus {
+              background-color: darken($whiteColor, 2%);
+            }
+          }
         }
       }
 
-      &:active {
-        background-color: activecolor($pinkColor);
+      button {
+        @include transition(background-color, 0.3s);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        border: 1px solid $pinkColor;
+        padding: 16px 0;
+        width: 100%;
+        font-family: 'Lato-Bold';
+        font-size: 16px;
+        color: $pinkColor;
+        background-color: $whiteColor;
+        cursor: pointer;
+
+        svg {
+          display: block;
+          margin-right: 15px;
+        }
+
+        &:hover {
+          color: $whiteColor;
+          background-color: hovercolor($pinkColor);
+
+          svg path {
+            fill: $whiteColor;
+          }
+        }
+
+        &:active {
+          background-color: activecolor($pinkColor);
+        }
       }
     }
   }
@@ -237,7 +236,6 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        margin-right: 5px;
         padding-bottom: 21px;
         width: 263px;
 
@@ -282,12 +280,12 @@
           color: $pinkColor;
         }
 
-        &:hover {
-          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+        &:not(:last-child) {
+          margin-right: 5px;
         }
 
-        &:last-child {
-          margin-right: 0;
+        &:hover {
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
         }
       }
     }

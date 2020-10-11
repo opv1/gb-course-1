@@ -279,7 +279,7 @@
         <section class="banner">
           <div class="banner-wrapper">
             <span class="banner-caption">new arrivals</span>
-            <div class="banner-block">
+            <div class="banner-container">
               <nav class="banner-navigation">
                 <ul class="banner-navigation__list">
                   <li class="banner-navigation__item">
@@ -303,9 +303,9 @@
         <section class="goods">
           <div class="goods-wrapper">
             <div class="goods-left">
-              <details class="goods-details" open>
+              <details class="goods-left__details" open>
                 <summary>category</summary>
-                <div class="goods-details__block">
+                <div class="goods-left__details__block">
                   <span>Accessories </span>
                   <span>Bags</span>
                   <span>Denim</span>
@@ -321,17 +321,17 @@
                   <span>Tanks</span>
                 </div>
               </details>
-              <details class="goods-details">
+              <details class="goods-left__details">
                 <summary>brand</summary>
               </details>
-              <details class="goods-details">
+              <details class="goods-left__details">
                 <summary>designer</summary>
               </details>
             </div>
             <div class="goods-right">
-              <div class="goods-config">
-                <div class="goods-sort">
-                  <div class="goods-sort__trending">
+              <div class="goods-right__config">
+                <div class="goods-right__config__sort">
+                  <div class="goods-right__config__sort__trending">
                     <span>trending now</span>
                     <div>
                       <small>Bohemian</small>
@@ -342,7 +342,7 @@
                       <small>Bohemian</small>
                     </div>
                   </div>
-                  <div class="goods-sort__size">
+                  <div class="goods-right__config__sort__size">
                     <span>size</span>
                     <form action="">
                       <label>
@@ -375,9 +375,9 @@
                       </label>
                     </form>
                   </div>
-                  <div class="goods-sort__price">
+                  <div class="goods-right__config__sort__price">
                     <span>price</span>
-                    <div class="goods-sort__price__block">
+                    <div class="goods-right__config__sort__price__block">
                       <input
                         id="input"
                         type="range"
@@ -385,15 +385,17 @@
                         max="100"
                         value="75"
                       />
-                      <div class="goods-sort__price__block__money">
+                      <div
+                        class="goods-right__config__sort__price__block__money"
+                      >
                         <strong>$52</strong>
                         <strong>$400</strong>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="goods-display">
-                  <div class="goods-display__block">
+                <div class="goods-right__config__display">
+                  <div class="goods-right__config__display__block">
                     <span>Sort By</span>
                     <select name="" id="">
                       <option value="Name">Name</option>
@@ -401,7 +403,7 @@
                       <option value="Name">Name</option>
                     </select>
                   </div>
-                  <div class="goods-display__block">
+                  <div class="goods-right__config__display__block">
                     <span>Show</span>
                     <select name="" id="">
                       <option value="9">09</option>
@@ -411,103 +413,141 @@
                   </div>
                 </div>
               </div>
-              <div class="goods-items">
-                <div class="goods-container">
-                  <div class="goods-item">
-                    <figure class="goods-item__image">
+              <div class="goods-right__items">
+                <div class="goods-right__items__container">
+                  <div class="goods-right__items__container__item">
+                    <figure class="goods-right__items__container__item__image">
                       <img
                         src="<%=require('../assets/images/goods-1.png').default%>"
                         alt="Товар"
                       />
                     </figure>
-                    <span class="goods-item__title">Mango People T-shirt</span>
-                    <span class="goods-item__price">$52.00</span>
+                    <span class="goods-right__items__container__item__title"
+                      >Mango People T-shirt</span
+                    >
+                    <span class="goods-right__items__container__item__price"
+                      >$52.00</span
+                    >
                   </div>
-                  <div class="goods-item">
-                    <figure class="goods-item__image">
+                  <div class="goods-right__items__container__item">
+                    <figure class="goods-right__items__container__item__image">
                       <img
                         src="<%=require('../assets/images/goods-1.png').default%>"
                         alt="Товар"
                       />
                     </figure>
-                    <span class="goods-item__title">Mango People T-shirt</span>
-                    <span class="goods-item__price">$52.00</span>
+                    <span class="goods-right__items__container__item__title"
+                      >Mango People T-shirt</span
+                    >
+                    <span class="goods-right__items__container__item__price"
+                      >$52.00</span
+                    >
                   </div>
-                  <div class="goods-item">
-                    <figure class="goods-item__image">
+                  <div class="goods-right__items__container__item">
+                    <figure class="goods-right__items__container__item__image">
                       <img
                         src="<%=require('../assets/images/goods-1.png').default%>"
                         alt="Товар"
                       />
                     </figure>
-                    <span class="goods-item__title">Mango People T-shirt</span>
-                    <span class="goods-item__price">$52.00</span>
+                    <span class="goods-right__items__container__item__title"
+                      >Mango People T-shirt</span
+                    >
+                    <span class="goods-right__items__container__item__price"
+                      >$52.00</span
+                    >
                   </div>
-                  <div class="goods-item">
-                    <figure class="goods-item__image">
+                  <div class="goods-right__items__container__item">
+                    <figure class="goods-right__items__container__item__image">
                       <img
                         src="<%=require('../assets/images/goods-1.png').default%>"
                         alt="Товар"
                       />
                     </figure>
-                    <span class="goods-item__title">Mango People T-shirt</span>
-                    <span class="goods-item__price">$52.00</span>
+                    <span class="goods-right__items__container__item__title"
+                      >Mango People T-shirt</span
+                    >
+                    <span class="goods-right__items__container__item__price"
+                      >$52.00</span
+                    >
                   </div>
-                  <div class="goods-item">
-                    <figure class="goods-item__image">
+                  <div class="goods-right__items__container__item">
+                    <figure class="goods-right__items__container__item__image">
                       <img
                         src="<%=require('../assets/images/goods-1.png').default%>"
                         alt="Товар"
                       />
                     </figure>
-                    <span class="goods-item__title">Mango People T-shirt</span>
-                    <span class="goods-item__price">$52.00</span>
+                    <span class="goods-right__items__container__item__title"
+                      >Mango People T-shirt</span
+                    >
+                    <span class="goods-right__items__container__item__price"
+                      >$52.00</span
+                    >
                   </div>
-                  <div class="goods-item">
-                    <figure class="goods-item__image">
+                  <div class="goods-right__items__container__item">
+                    <figure class="goods-right__items__container__item__image">
                       <img
                         src="<%=require('../assets/images/goods-1.png').default%>"
                         alt="Товар"
                       />
                     </figure>
-                    <span class="goods-item__title">Mango People T-shirt</span>
-                    <span class="goods-item__price">$52.00</span>
+                    <span class="goods-right__items__container__item__title"
+                      >Mango People T-shirt</span
+                    >
+                    <span class="goods-right__items__container__item__price"
+                      >$52.00</span
+                    >
                   </div>
-                  <div class="goods-item">
-                    <figure class="goods-item__image">
+                  <div class="goods-right__items__container__item">
+                    <figure class="goods-right__items__container__item__image">
                       <img
                         src="<%=require('../assets/images/goods-1.png').default%>"
                         alt="Товар"
                       />
                     </figure>
-                    <span class="goods-item__title">Mango People T-shirt</span>
-                    <span class="goods-item__price">$52.00</span>
+                    <span class="goods-right__items__container__item__title"
+                      >Mango People T-shirt</span
+                    >
+                    <span class="goods-right__items__container__item__price"
+                      >$52.00</span
+                    >
                   </div>
-                  <div class="goods-item">
-                    <figure class="goods-item__image">
+                  <div class="goods-right__items__container__item">
+                    <figure class="goods-right__items__container__item__image">
                       <img
                         src="<%=require('../assets/images/goods-1.png').default%>"
                         alt="Товар"
                       />
                     </figure>
-                    <span class="goods-item__title">Mango People T-shirt</span>
-                    <span class="goods-item__price">$52.00</span>
+                    <span class="goods-right__items__container__item__title"
+                      >Mango People T-shirt</span
+                    >
+                    <span class="goods-right__items__container__item__price"
+                      >$52.00</span
+                    >
                   </div>
-                  <div class="goods-item">
-                    <figure class="goods-item__image">
+                  <div class="goods-right__items__container__item">
+                    <figure class="goods-right__items__container__item__image">
                       <img
                         src="<%=require('../assets/images/goods-1.png').default%>"
                         alt="Товар"
                       />
                     </figure>
-                    <span class="goods-item__title">Mango People T-shirt</span>
-                    <span class="goods-item__price">$52.00</span>
+                    <span class="goods-right__items__container__item__title"
+                      >Mango People T-shirt</span
+                    >
+                    <span class="goods-right__items__container__item__price"
+                      >$52.00</span
+                    >
                   </div>
                 </div>
-                <div class="goods-pagination">
-                  <div class="goods-pagination__container">
+                <div class="goods-right__items__pagination">
+                  <div class="goods-right__items__pagination__container">
                     <i class="fas fa-angle-left"></i>
-                    <div class="goods-pagination__block">
+                    <div
+                      class="goods-right__items__pagination__container__block"
+                    >
                       <small>1</small>
                       <small>2</small>
                       <small>3</small>

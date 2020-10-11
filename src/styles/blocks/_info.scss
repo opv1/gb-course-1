@@ -37,15 +37,14 @@
       }
 
       &__title {
-        margin-left: 13px;
         font-family: 'Lato-Light';
         font-size: 27px;
         letter-spacing: 0.68px;
         text-transform: uppercase;
         color: $blackColor;
 
-        &:last-child {
-          margin-left: 0;
+        &:not(:last-child) {
+          margin-left: 13px;
         }
       }
 
@@ -70,8 +69,8 @@
         letter-spacing: 0.35px;
         color: #898989;
 
-        &:last-child {
-          margin-top: 35px;
+        &:not(:last-child) {
+          margin-bottom: 35px;
         }
       }
     }
@@ -89,6 +88,7 @@
 
       &__title {
         margin: 0;
+        margin-bottom: 45px;
         font-family: 'Lato-Bold';
         font-size: 18px;
         line-height: 1.44;
@@ -99,13 +99,16 @@
       }
 
       &__list {
+        display: flex;
+        flex-direction: column;
         list-style: none;
         margin: 0;
-        margin-top: 45px;
         padding: 0;
       }
 
       &__item {
+        display: flex;
+
         a {
           @include transition(color, 0.3s);
 
@@ -136,26 +139,27 @@
     }
 
     &-left {
-      flex-direction: row;
-      align-items: flex-start;
       margin-right: 0;
       margin-bottom: 35px;
       max-width: 100%;
-
-      &__logo {
-        margin-right: 15px;
-        margin-bottom: 0;
-      }
     }
 
     &-right {
       justify-content: space-around;
+
+      &__column {
+        &__title {
+          margin-bottom: 29px;
+        }
+      }
     }
   }
 }
 
 @media screen and (max-width: 502px) {
   .info {
+    padding: 55px 0 45px;
+
     &-left {
       flex-direction: column;
       align-items: center;
@@ -168,6 +172,10 @@
       &__block {
         &__text {
           text-align: center;
+
+          &:not(:last-child) {
+            margin-bottom: 18px;
+          }
         }
       }
     }
@@ -181,15 +189,19 @@
         align-items: center;
         justify-content: center;
         margin-right: 0;
-        margin-bottom: 25px;
         text-align: center;
 
+        &__title {
+          margin-bottom: 0;
+        }
+
         &__list {
+          align-items: center;
           margin-top: 0;
         }
 
-        &:last-child {
-          margin-bottom: 0;
+        &:not(:last-child) {
+          margin-bottom: 25px;
         }
       }
     }

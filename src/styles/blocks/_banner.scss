@@ -22,6 +22,10 @@
     color: $pinkColor;
   }
 
+  &-container {
+    display: flex;
+  }
+
   &-navigation {
     &__list {
       display: flex;

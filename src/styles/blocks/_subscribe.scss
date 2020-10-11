@@ -38,7 +38,6 @@
 
       img {
         display: block;
-        width: 100%;
         object-fit: cover;
         object-position: center;
       }
@@ -85,13 +84,12 @@
 
         span {
           display: block;
-          margin-right: 13px;
           width: 38px;
           height: 4px;
           background-color: #d6d6d6;
 
-          &:last-child {
-            margin-right: 0;
+          &:not(:last-child) {
+            margin-right: 13px;
           }
 
           &:nth-child(2) {
@@ -157,7 +155,6 @@
         letter-spacing: 0.35px;
         color: $blackColor;
         background-color: #e1e1e1;
-        opacity: 0.67;
 
         &::placeholder {
           color: #a4a4a4;
@@ -197,6 +194,7 @@
   .subscribe {
     &-wrapper {
       flex-direction: column;
+      padding: 10px;
     }
 
     &-left {
@@ -208,6 +206,10 @@
     &-right {
       border-top: 1px solid #e6e6e6;
       border-left: none;
+
+      &__block {
+        margin-bottom: 18px;
+      }
     }
   }
 }
