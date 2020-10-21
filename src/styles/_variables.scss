@@ -1,5 +1,5 @@
-$blackColor: #222222;
-$whiteColor: #ffffff;
+$blackColor: #222;
+$whiteColor: #fff;
 $pinkColor: #f16d7f;
 $greyColor: #e6e6e6;
 
@@ -16,10 +16,14 @@ $greyColor: #e6e6e6;
   transform: rotate($degree);
 }
 
-@function hoverColor($color) {
+@function focuscolor($color) {
+  @return darken($color, 2%);
+}
+
+@function hovercolor($color) {
   @return darken($color, 5%);
 }
 
-@function activeColor($color) {
+@function activecolor($color) {
   @return darken($color, 10%);
 }

@@ -8,18 +8,22 @@
 
   &-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 1140px;
   }
 
   &-caption {
     margin: 0;
-    text-transform: uppercase;
     font-family: 'Lato-Black';
     font-size: 24px;
+    text-transform: uppercase;
     color: $pinkColor;
+  }
+
+  &-container {
+    display: flex;
   }
 
   &-navigation {
@@ -32,12 +36,12 @@
 
     &__item {
       a {
-        text-decoration: none;
-        text-transform: uppercase;
+        @include transition(color, 0.3s);
+
         font-family: 'Lato-Light';
         font-size: 14px;
+        text-transform: uppercase;
         color: #636363;
-        @include transition(color, 0.3s);
 
         &:hover {
           color: $pinkColor;

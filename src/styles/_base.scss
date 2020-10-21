@@ -4,24 +4,28 @@
 
 body {
   margin: 0;
-  font-family: 'Lato-Regular', Arial, Helvetica, sans-serif;
+  font-family: 'Lato-Regular', 'Arial', 'Helvetica', sans-serif;
 }
 
 .page {
   display: flex;
   flex-direction: column;
+  margin: auto;
   width: 100%;
   min-width: 320px;
-  margin: auto;
+
+  a {
+    text-decoration: none;
+  }
 
   input[type='search']::-webkit-search-cancel-button,
   input[type='search']::-webkit-search-results-button {
-    -webkit-appearance: none;
+    appearance: none;
   }
 
   input[type='number']::-webkit-inner-spin-button,
   input[type='number']::-webkit-outer-spin-button {
-    -webkit-appearance: none;
+    appearance: none;
     margin: 0;
   }
 

@@ -3,15 +3,15 @@
 .specification {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-bottom: 73px;
 
   &-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 1140px;
   }
@@ -20,191 +20,192 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -85px;
-    margin-bottom: 119px;
-    width: 100%;
-    padding-top: 73px;
-    background-color: $whiteColor;
+    margin: -85px 0 119px;
     border: 1px solid #eaeaea;
-  }
+    padding-top: 73px;
+    width: 100%;
+    background-color: $whiteColor;
 
-  &-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &__caption {
-      position: relative;
-      margin: 0;
-      padding-bottom: 15px;
-      margin-bottom: 18px;
-      border-bottom: solid 1px #eaeaea;
-      text-transform: uppercase;
-      font-family: 'Lato-Bold';
-      font-size: 14px;
-      color: $pinkColor;
-
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -1px;
-        left: 50%;
-        transform: translate(-50%);
-        width: 63px;
-        height: 2px;
-        background-color: $pinkColor;
-      }
-    }
-
-    &__title {
-      text-transform: uppercase;
-      font-family: 'Lato-Black';
-      font-size: 18px;
-      color: #4d4d4d;
-      margin-bottom: 53px;
-    }
-
-    &__block {
+    &__details {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-bottom: 43px;
-      border-bottom: 1px solid #eaeaea;
-      margin-bottom: 63px;
 
-      p {
-        width: 619px;
+      &__caption {
+        position: relative;
         margin: 0;
-        text-align: center;
-        font-family: 'Lato-Light';
+        margin-bottom: 18px;
+        border-bottom: solid 1px #eaeaea;
+        padding-bottom: 15px;
+        font-family: 'Lato-Bold';
         font-size: 14px;
-        color: #5e5e5e;
-        margin-bottom: 28px;
-      }
+        text-transform: uppercase;
+        color: $pinkColor;
 
-      div {
-        margin-bottom: 37px;
-
-        span {
-          text-transform: uppercase;
-          font-family: 'Lato-Bold';
-          font-size: 14px;
-          color: #b9b9b9;
-
-          &:last-child {
-            margin-left: 44px;
-          }
-
-          strong {
-            text-transform: uppercase;
-            color: #2f2f2f;
-          }
+        &::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -1px;
+          width: 63px;
+          height: 2px;
+          background-color: $pinkColor;
+          transform: translate(-50%);
         }
       }
 
-      span {
-        font-size: 24px;
-        font-family: 'Lato-Bold';
-        color: $pinkColor;
+      &__title {
+        margin-bottom: 53px;
+        font-family: 'Lato-Black';
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #4d4d4d;
       }
-    }
-  }
 
-  &-form {
-    width: 537px;
-    margin-bottom: 122px;
-
-    div {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 28px;
-
-      div {
+      &__block {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin-bottom: 63px;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 43px;
 
-        span {
-          margin-bottom: 16px;
-          text-transform: uppercase;
+        p {
+          margin: 0;
+          margin-bottom: 28px;
+          width: 619px;
+          font-family: 'Lato-Light';
           font-size: 14px;
-          font-family: 'Lato-Bold';
-          color: #2f2f2f;
+          text-align: center;
+          color: #5e5e5e;
         }
 
-        select {
-          cursor: pointer;
-          width: 144px;
-          height: 35px;
-          padding-left: 14px;
-          outline: none;
-          border: solid 1px #eaeaea;
-          background-color: $whiteColor;
-          font-size: 14px;
-          color: $blackColor;
+        div {
+          margin-bottom: 37px;
 
-          option {
+          span {
+            font-family: 'Lato-Bold';
             font-size: 14px;
-            color: $blackColor;
+            text-transform: uppercase;
+            color: #b9b9b9;
 
-            &:first-child {
-              color: #bcbcbc;
+            strong {
+              text-transform: uppercase;
+              color: #2f2f2f;
+            }
+
+            &:last-child {
+              margin-left: 44px;
             }
           }
         }
 
-        input {
-          width: 144px;
-          height: 35px;
-          padding-left: 14px;
-          outline: none;
-          border: solid 1px #eaeaea;
-          background-color: $whiteColor;
-          font-size: 14px;
-          color: $blackColor;
-          @include transition(background-color, 0.3s);
-
-          &:focus {
-            background-color: darken($whiteColor, 2%);
-          }
-
-          &::placeholder {
-            color: #bcbcbc;
-          }
+        span {
+          font-family: 'Lato-Bold';
+          font-size: 24px;
+          color: $pinkColor;
         }
       }
     }
 
-    button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      cursor: pointer;
-      border: 1px solid $pinkColor;
-      outline: none;
-      background-color: $whiteColor;
-      padding: 16px 0;
-      font-family: 'Lato-Bold';
-      font-size: 16px;
-      color: $pinkColor;
-      @include transition(background-color, 0.3s);
+    &__form {
+      margin-bottom: 122px;
+      width: 537px;
 
-      &:hover {
-        background-color: hoverColor($pinkColor);
-        color: $whiteColor;
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 28px;
 
-        svg path {
-          fill: $whiteColor;
+        div {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            margin-bottom: 16px;
+            font-family: 'Lato-Bold';
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #2f2f2f;
+          }
+
+          select {
+            outline: none;
+            border: solid 1px #eaeaea;
+            padding-left: 14px;
+            width: 144px;
+            height: 35px;
+            font-size: 14px;
+            color: $blackColor;
+            background-color: $whiteColor;
+            cursor: pointer;
+
+            option {
+              font-size: 14px;
+              color: $blackColor;
+
+              &:first-child {
+                color: #bcbcbc;
+              }
+            }
+          }
+
+          input {
+            @include transition(background-color, 0.3s);
+
+            outline: none;
+            border: solid 1px #eaeaea;
+            padding-left: 14px;
+            width: 144px;
+            height: 35px;
+            font-size: 14px;
+            color: $blackColor;
+            background-color: $whiteColor;
+
+            &::placeholder {
+              color: #bcbcbc;
+            }
+
+            &:focus {
+              background-color: darken($whiteColor, 2%);
+            }
+          }
         }
       }
 
-      &:active {
-        background-color: activeColor($pinkColor);
-      }
+      button {
+        @include transition(background-color, 0.3s);
 
-      svg {
-        display: block;
-        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        border: 1px solid $pinkColor;
+        padding: 16px 0;
+        width: 100%;
+        font-family: 'Lato-Bold';
+        font-size: 16px;
+        color: $pinkColor;
+        background-color: $whiteColor;
+        cursor: pointer;
+
+        svg {
+          display: block;
+          margin-right: 15px;
+        }
+
+        &:hover {
+          color: $whiteColor;
+          background-color: hovercolor($pinkColor);
+
+          svg path {
+            fill: $whiteColor;
+          }
+        }
+
+        &:active {
+          background-color: activecolor($pinkColor);
+        }
       }
     }
   }
@@ -218,9 +219,9 @@
     &__caption {
       margin: 0;
       margin-bottom: 72px;
-      text-transform: uppercase;
       font-family: 'Lato-Black';
       font-size: 24px;
+      text-transform: uppercase;
       color: #4d4d4d;
     }
 
@@ -230,52 +231,45 @@
       width: 100%;
 
       &__item {
+        @include transition(box-shadow, 0.3s);
+
         position: relative;
         display: flex;
         flex-direction: column;
-        width: 263px;
-        margin-right: 5px;
         padding-bottom: 21px;
-        @include transition(box-shadow, 0.3s);
-
-        &:last-child {
-          margin-right: 0;
-        }
-
-        &:hover {
-          box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
-        }
+        width: 263px;
 
         figure {
           display: flex;
-          justify-content: center;
           align-items: center;
-          margin: 0;
-          height: 280px;
-          margin-bottom: 18px;
-          background-color: #e9e9e9;
+          justify-content: center;
           overflow: hidden;
+          margin: 0;
+          margin-bottom: 18px;
+          height: 280px;
+          background-color: #e9e9e9;
+
+          img {
+            @include transition(transform, 0.3s);
+
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
 
           &:hover {
             img {
               @include transformScale(1.1);
             }
           }
-
-          img {
-            display: block;
-            object-fit: cover;
-            object-position: center;
-            height: 100%;
-            @include transition(transform, 0.3s);
-          }
         }
 
         &__title {
-          margin-left: 15px;
           margin-bottom: 17px;
-          text-transform: uppercase;
+          margin-left: 15px;
           font-size: 14px;
+          text-transform: uppercase;
           color: #6f6e6e;
         }
 
@@ -284,6 +278,14 @@
           font-family: 'Lato-Bold';
           font-size: 16px;
           color: $pinkColor;
+        }
+
+        &:not(:last-child) {
+          margin-right: 5px;
+        }
+
+        &:hover {
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
         }
       }
     }
