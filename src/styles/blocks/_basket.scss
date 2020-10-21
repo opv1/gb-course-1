@@ -193,11 +193,11 @@
       cursor: pointer;
 
       &:hover {
-        background-color: hovercolor($whiteColor);
+        background-color: hoverColor($whiteColor);
       }
 
       &:active {
-        background-color: activecolor($whiteColor);
+        background-color: activeColor($whiteColor);
       }
     }
 
@@ -215,11 +215,11 @@
       cursor: pointer;
 
       &:hover {
-        background-color: hovercolor($whiteColor);
+        background-color: hoverColor($whiteColor);
       }
 
       &:active {
-        background-color: activecolor($whiteColor);
+        background-color: activeColor($whiteColor);
       }
     }
   }
@@ -333,11 +333,11 @@
             cursor: pointer;
 
             &:hover {
-              background-color: hovercolor($whiteColor);
+              background-color: hoverColor($whiteColor);
             }
 
             &:active {
-              background-color: activecolor($whiteColor);
+              background-color: activeColor($whiteColor);
             }
           }
         }
@@ -395,11 +395,11 @@
           cursor: pointer;
 
           &:hover {
-            background-color: hovercolor($pinkColor);
+            background-color: hoverColor($pinkColor);
           }
 
           &:active {
-            background-color: activecolor($pinkColor);
+            background-color: activeColor($pinkColor);
           }
         }
       }
@@ -420,11 +420,11 @@
       cursor: pointer;
 
       &:hover {
-        background-color: hovercolor($whiteColor);
+        background-color: hoverColor($whiteColor);
       }
 
       &:active {
-        background-color: activecolor($whiteColor);
+        background-color: activeColor($whiteColor);
       }
     }
   }

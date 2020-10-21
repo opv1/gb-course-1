@@ -13,12 +13,12 @@
             <div class="header-shell">
               <div class="header-container">
                 <a class="header-container__logo" href="./index.html">
-                  <figure class="header-container__logo__image">
+                  <div class="header-container__logo__image">
                     <img
                       src="<%=require('../assets/images/logo.png').default%>"
                       alt="Лого"
                     />
-                  </figure>
+                  </div>
                   <span class="header-container__logo__title">bran</span>
                   <span
                     class="header-container__logo__title header-container__logo__title_last-letter"
@@ -114,12 +114,12 @@
                     <div class="header-container__cart__element__block">
                       <div class="header-container__cart__element__block__item">
                         <div>
-                          <figure>
+                          <div>
                             <img
                               src="<%=require('../assets/images/cart-1.png').default%>"
                               alt="Товар"
                             />
-                          </figure>
+                          </div>
                           <div>
                             <span>Rebox Zane</span>
                             <span>
@@ -138,12 +138,12 @@
                       </div>
                       <div class="header-container__cart__element__block__item">
                         <div>
-                          <figure>
+                          <div>
                             <img
                               src="<%=require('../assets/images/cart-1.png').default%>"
                               alt="Товар"
                             />
-                          </figure>
+                          </div>
                           <div>
                             <span>Rebox Zane</span>
                             <span>
@@ -275,8 +275,8 @@
           </ul>
         </nav>
       </header>
-      <main class="main">
-        <section class="banner">
+      <div class="container">
+        <div class="banner">
           <div class="banner-wrapper">
             <h1 class="banner-caption">new arrivals</h1>
             <div class="banner-container">
@@ -299,8 +299,8 @@
               </nav>
             </div>
           </div>
-        </section>
-        <section class="details">
+        </div>
+        <div class="details">
           <div class="details-wrapper">
             <details class="details-container" open>
               <summary>01. shipping adress</summary>
@@ -383,62 +383,60 @@
               <summary>06. order review</summary>
             </details>
           </div>
-        </section>
-        <section class="subscribe">
-          <div class="subscribe-background">
-            <div class="subscribe-wrapper">
-              <div class="subscribe-left">
-                <figure class="subscribe-left__avatar">
-                  <img
-                    src="<%=require('../assets/images/avatar.png').default%>"
-                    alt="Аватар"
-                  />
-                </figure>
-                <div class="subscribe-left__review">
-                  <blockquote class="subscribe-left__review__quote">
-                    <p>
-                      “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-                      pulvinar purus condimentum a. Aliquam condimentum mattis
-                      neque sed pretium”
-                    </p>
-                  </blockquote>
-                  <span class="subscribe-left__review__author">Bin Burhan</span>
-                  <span class="subscribe-left__review__about">Dhaka, Bd</span>
-                  <div class="subscribe-left__review__pagination">
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
+        </div>
+        <div class="subscribe">
+          <div class="subscribe-wrapper">
+            <div class="subscribe-left">
+              <div class="subscribe-left__avatar">
+                <img
+                  src="<%=require('../assets/images/avatar.png').default%>"
+                  alt="Аватар"
+                />
               </div>
-              <div class="subscribe-right">
-                <div class="subscribe-right__block">
-                  <h5 class="subscribe-right__block__caption">subscribe</h5>
-                  <span class="subscribe-right__block__subcaption">
-                    for our newletter and promotion</span
-                  >
+              <div class="subscribe-left__review">
+                <blockquote class="subscribe-left__review__quote">
+                  <p>
+                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                    pulvinar purus condimentum a. Aliquam condimentum mattis
+                    neque sed pretium”
+                  </p>
+                </blockquote>
+                <span class="subscribe-left__review__author">Bin Burhan</span>
+                <span class="subscribe-left__review__about">Dhaka, Bd</span>
+                <div class="subscribe-left__review__pagination">
+                  <span></span>
+                  <span></span>
                 </div>
-                <form
-                  class="subscribe-right__form"
-                  name="subscribe-form"
-                  action=""
-                >
-                  <input type="text" placeholder="Enter Your Email" required />
-                  <button>Subscribe</button>
-                </form>
               </div>
             </div>
+            <div class="subscribe-right">
+              <div class="subscribe-right__block">
+                <h5 class="subscribe-right__block__caption">subscribe</h5>
+                <span class="subscribe-right__block__subcaption">
+                  for our newletter and promotion</span
+                >
+              </div>
+              <form
+                class="subscribe-right__form"
+                name="subscribe-form"
+                action=""
+              >
+                <input type="text" placeholder="Enter Your Email" required />
+                <button>Subscribe</button>
+              </form>
+            </div>
           </div>
-        </section>
-        <section class="info">
+        </div>
+        <div class="info">
           <div class="info-wrapper">
             <div class="info-left">
               <a class="info-left__logo" href="./index.html">
-                <figure class="info-left__logo__image">
+                <div class="info-left__logo__image">
                   <img
                     src="<%=require('../assets/images/logo.png').default%>"
                     alt="Лого"
                   />
-                </figure>
+                </div>
                 <span class="info-left__logo__title">bran</span>
                 <span
                   class="info-left__logo__title info-left__logo__title_last-letter"
@@ -523,8 +521,8 @@
               </div>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </div>
       <footer class="footer">
         <div class="footer-wrapper">
           <span class="footer-copy"

@@ -6,17 +6,10 @@
   justify-content: center;
   width: 100%;
   height: 438px;
-  background: linear-gradient(to right, #ebebeb, #f4f4f4);
-
-  &-background {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 1600px;
-    background: #aaa url('../assets/images/subscribe-1.png') center no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
-  }
+  background: #aaa url('../assets/images/subscribe-1.png') center no-repeat;
+  background-position-y: bottom;
+  background-size: cover;
+  background-blend-mode: overlay;
 
   &-wrapper {
     display: flex;
@@ -161,7 +154,7 @@
         }
 
         &:focus {
-          background-color: focuscolor(#e1e1e1);
+          background-color: focusColor(#e1e1e1);
         }
       }
 
@@ -179,11 +172,11 @@
         cursor: pointer;
 
         &:hover {
-          background-color: hovercolor($pinkColor);
+          background-color: hoverColor($pinkColor);
         }
 
         &:active {
-          background-color: activecolor($pinkColor);
+          background-color: activeColor($pinkColor);
         }
       }
     }

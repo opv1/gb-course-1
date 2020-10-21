@@ -196,7 +196,7 @@
 
         &:hover {
           color: $whiteColor;
-          background-color: hovercolor($pinkColor);
+          background-color: hoverColor($pinkColor);
 
           svg path {
             fill: $whiteColor;
@@ -204,7 +204,7 @@
         }
 
         &:active {
-          background-color: activecolor($pinkColor);
+          background-color: activeColor($pinkColor);
         }
       }
     }
@@ -239,7 +239,7 @@
         padding-bottom: 21px;
         width: 263px;
 
-        figure {
+        div {
           display: flex;
           align-items: center;
           justify-content: center;

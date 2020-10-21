@@ -207,7 +207,7 @@
             }
 
             &:hover {
-              background-color: hovercolor(#f9f9f9);
+              background-color: hoverColor(#f9f9f9);
             }
           }
 
@@ -235,7 +235,7 @@
               }
 
               &:focus {
-                background-color: focuscolor($whiteColor);
+                background-color: focusColor($whiteColor);
               }
             }
 
@@ -261,11 +261,11 @@
               }
 
               &:hover {
-                background-color: hovercolor($whiteColor);
+                background-color: hoverColor($whiteColor);
               }
 
               &:active {
-                background-color: activecolor($whiteColor);
+                background-color: activeColor($whiteColor);
               }
             }
           }
@@ -335,46 +335,49 @@
               display: flex;
               justify-content: center;
 
-              figure {
-                margin: 0;
-                margin-right: 14px;
-                width: 72px;
-                height: 85px;
-
-                img {
-                  display: block;
-                  width: 100%;
-                  object-fit: cover;
-                  object-position: center;
-                }
-              }
-
               div {
-                display: flex;
-                flex-direction: column;
+                &:first-child {
+                  margin: 0;
+                  margin-right: 14px;
+                  width: 72px;
+                  height: 85px;
 
-                span {
-                  &:not(:last-child) {
+                  img {
+                    display: block;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                  }
+                }
+
+                &:last-child {
+                  display: flex;
+                  flex-direction: column;
+
+                  span {
                     margin-bottom: 10px;
-                    font-size: 14px;
-                    color: #f16d7f;
-                  }
 
-                  &:first-child {
-                    font-family: 'Lato-Bold';
-                    font-size: 16px;
-                    color: $blackColor;
-                  }
+                    &:first-child {
+                      font-family: 'Lato-Bold';
+                      font-size: 16px;
+                      color: $blackColor;
+                    }
 
-                  &:nth-child(2) {
-                    display: flex;
+                    &:last-child {
+                      font-size: 14px;
+                      color: #f16d7f;
+                    }
 
-                    i {
-                      font-size: 12px;
-                      color: #e4af48;
+                    &:nth-child(2) {
+                      display: flex;
 
-                      &::before {
-                        display: block;
+                      i {
+                        font-size: 12px;
+                        color: #e4af48;
+
+                        &::before {
+                          display: block;
+                        }
                       }
                     }
                   }
@@ -489,7 +492,7 @@
       }
 
       &:hover {
-        background-color: hovercolor($pinkColor);
+        background-color: hoverColor($pinkColor);
       }
     }
 
@@ -718,6 +721,7 @@
     &__list-mobile {
       position: absolute;
       top: 45px;
+      z-index: 100;
       display: none;
       flex-direction: column;
       list-style: none;

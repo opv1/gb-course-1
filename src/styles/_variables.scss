@@ -16,14 +16,14 @@ $greyColor: #e6e6e6;
   transform: rotate($degree);
 }
 
-@function focuscolor($color) {
+@function focusColor($color) {
   @return darken($color, 2%);
 }
 
-@function hovercolor($color) {
+@function hoverColor($color) {
   @return darken($color, 5%);
 }
 
-@function activecolor($color) {
+@function activeColor($color) {
   @return darken($color, 10%);
 }

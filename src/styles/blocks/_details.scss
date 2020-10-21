@@ -126,11 +126,11 @@
           cursor: pointer;
 
           &:hover {
-            background-color: hovercolor($whiteColor);
+            background-color: hoverColor($whiteColor);
           }
 
           &:active {
-            background-color: activecolor($whiteColor);
+            background-color: activeColor($whiteColor);
           }
         }
       }
@@ -203,11 +203,11 @@
               cursor: pointer;
 
               &:hover {
-                background-color: hovercolor($whiteColor);
+                background-color: hoverColor($whiteColor);
               }
 
               &:active {
-                background-color: activecolor($whiteColor);
+                background-color: activeColor($whiteColor);
               }
             }
 
