@@ -1,5 +1,5 @@
 {
-  "name": "gb-course-1",
+  "name": "store-app-gb",
   "version": "1.0.0",
   "description": "Online Store",
   "private": true,
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opv1/gb-course-1.git"
+    "url": "git+https://github.com/opv1/store-app-gb.git"
   },
   "keywords": [],
   "author": "Pavel Ovechkin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/opv1/gb-course-1/issues"
+    "url": "https://github.com/opv1/store-app-gb/issues"
   },
-  "homepage": "https://github.com/opv1/gb-course-1#readme",
+  "homepage": "https://github.com/opv1/store-app-gb#readme",
   "devDependencies": {
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
