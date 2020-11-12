@@ -73,11 +73,28 @@
             }
 
             label {
-              margin-left: 14px;
+              display: flex;
               font-size: 12px;
+              text-align: center;
               text-transform: uppercase;
               color: $blackColor;
               cursor: pointer;
+            }
+
+            label::before {
+              @include transition(background-color, 0.3s);
+
+              content: '';
+              display: block;
+              margin-right: 5px;
+              border: 1px solid $pinkColor;
+              border-radius: 100%;
+              width: 10px;
+              height: 10px;
+            }
+
+            input:checked + label::before {
+              background-color: $pinkColor;
             }
 
             &:last-child {

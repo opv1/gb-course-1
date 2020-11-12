@@ -156,16 +156,23 @@
               font-size: 14px;
               color: #6f6e6e;
               cursor: pointer;
+              user-select: none;
+            }
 
-              input {
-                margin: 0;
-                margin-right: 9px;
-                cursor: pointer;
-              }
+            label::before {
+              @include transition(background-color, 0.3s);
 
-              &:nth-child(4n + 4) {
-                margin-right: 0;
-              }
+              content: '';
+              display: block;
+              margin-right: 5px;
+              border: 1px solid $pinkColor;
+              border-radius: 2px;
+              width: 10px;
+              height: 10px;
+            }
+
+            input:checked + label::before {
+              background-color: $pinkColor;
             }
           }
         }

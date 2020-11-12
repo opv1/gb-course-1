@@ -130,6 +130,8 @@
           }
 
           select {
+            @include transition(border, 0.3s);
+
             outline: none;
             border: solid 1px #eaeaea;
             padding-left: 14px;
@@ -148,6 +150,10 @@
                 color: #bcbcbc;
               }
             }
+          }
+
+          select:focus {
+            border: solid 1px $pinkColor;
           }
 
           input {
@@ -238,6 +244,7 @@
         flex-direction: column;
         padding-bottom: 21px;
         width: 263px;
+        cursor: pointer;
 
         div {
           display: flex;
