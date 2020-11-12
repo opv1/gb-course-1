@@ -7,7 +7,7 @@
 
 Online Store
 
-Стек: HTML, CSS, SCSS, JavaScript, Webpack
+Стек: HTML, CSS, Scss, JavaScript, Webpack
 
 ## [Увидеть проект](https://opv1.github.io/store-app-gb/)
 
