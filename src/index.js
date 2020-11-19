@@ -1,4 +1,5 @@
 import './styles/index.scss'
+import GoodsFetch from './scripts/components/GoodsFetch'
 import GoodsList from './scripts/components/GoodsList'
 
 const menuToggle = document.querySelector('.header-navigation__burger')
@@ -12,7 +13,14 @@ menuToggle.onclick = function () {
     .classList.toggle('header-navigation__list-mobile_active')
 }
 
+const apiUrl =
+  'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses'
+
+const goodsFetch = new GoodsFetch({ apiUrl })
 const goodsList = new GoodsList()
-goodsList.fetchGoods()
-goodsList.render()
-goodsList.sum()
+
+const promise = new Promise((resolve) => {
+  resolve(goodsFetch.getGoods())
+})
+
+promise.then((res) => goodsList.render(res))
