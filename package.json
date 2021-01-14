@@ -6,7 +6,8 @@
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open 'Chrome' --watch",
     "deploy": "cross-env NODE_ENV=production gh-pages -d dist",
-    "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json"
+    "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json",
+    "stylelint": "npx stylelint \"**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",
