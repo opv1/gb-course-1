@@ -1,17 +1,11 @@
-<h1 align="center">Online Store</h1>
+<h1 align="center">Online store</h1>
 <p align="center">
   <img src="https://img.shields.io/badge/made%20by-opv1-blue.svg">
 </p>
 
-## Описание
+## [See the project](https://opv1.github.io/online-store/)
 
-Online Store
-
-Стек: HTML, CSS, Scss, JavaScript, Webpack
-
-## [Увидеть проект](https://opv1.github.io/store-app-gb/)
-
-## Настройка проекта
+## Setup
 
 ```
 npm run build

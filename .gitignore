@@ -3,6 +3,7 @@
 /node_modules
 *.git
 *.log
+stats.json
 
 # Windows thumbnail cache files
 Thumbs.db

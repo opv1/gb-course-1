@@ -1,14 +1,14 @@
-const path = require('path');
-const webpack = require('webpack');
-const WebpackMd5Hash = require('webpack-md5-hash');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const TerserWebpackPlugin = require('terser-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const WebpackMd5Hash = require('webpack-md5-hash')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const TerserWebpackPlugin = require('terser-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
-const isDev = process.env.NODE_ENV === 'development';
-const isProd = !isDev;
+const isDev = process.env.NODE_ENV === 'development'
+const isProd = !isDev
 
 const jsLoaders = () => {
   const loaders = [
@@ -18,10 +18,10 @@ const jsLoaders = () => {
         presets: ['@babel/preset-env'],
       },
     },
-  ];
+  ]
 
-  return loaders;
-};
+  return loaders
+}
 
 const cssLoaders = (extra) => {
   const loaders = [
@@ -33,34 +33,34 @@ const cssLoaders = (extra) => {
     },
     'css-loader',
     'postcss-loader',
-  ];
+  ]
 
   if (extra) {
-    loaders.push(extra);
+    loaders.push(extra)
   }
 
-  return loaders;
-};
+  return loaders
+}
 
 const filename = (ext) =>
-  isProd ? `[name].[chunkhash].${ext}` : `[name].${ext}`;
+  isProd ? `[name].[chunkhash].${ext}` : `[name].${ext}`
 
 const optimization = () => {
   const config = {
     splitChunks: {
       chunks: 'all',
     },
-  };
+  }
 
   if (isProd) {
     config.minimizer = [
       new TerserWebpackPlugin(),
       new OptimizeCssAssetsPlugin(),
-    ];
+    ]
   }
 
-  return config;
-};
+  return config
+}
 
 const plugins = () => {
   const base = [
@@ -106,10 +106,10 @@ const plugins = () => {
     new MiniCssExtractPlugin({
       filename: filename('css'),
     }),
-  ];
+  ]
 
-  return base;
-};
+  return base
+}
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -163,4 +163,4 @@ module.exports = {
   },
 
   plugins: plugins(),
-};
+}
