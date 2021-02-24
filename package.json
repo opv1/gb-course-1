@@ -1,8 +1,8 @@
 {
-  "name": "online-store",
+  "name": "online-store-layout",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/opv1/online-store",
+  "homepage": "https://github.com/opv1/online-store-layout",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open 'Chrome' --watch",
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opv1/online-store.git"
+    "url": "git+https://github.com/opv1/online-store-layout.git"
   },
   "keywords": [],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/opv1/online-store/issues"
+    "url": "https://github.com/opv1/online-store-layout/issues"
   },
   "dependencies": {
     "core-js": "^3.8.2",
